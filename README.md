@@ -3,7 +3,6 @@
 # GLines - Sustav upravljanja gradskim prijevozom putnika
 
 ## Podaci o studentu
-(Ispod promijenite samo drugi redak tablice!)
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
