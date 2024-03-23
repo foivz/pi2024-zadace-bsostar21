@@ -17,9 +17,13 @@ U cilju poboljšanja točnosti polazaka i ubrzanja procesa ukrcavanja, planira s
 
 ## Specifikacija projekta
 **Digitalizacija poslovanja**: Implementacija digitalnog sustava za upravljanje vozilima, stanicama, linijama i voznim redom radi zamjene postojećeg papirnatog sustava.
+
 **Definiranje vozila i stanica**: Omogućavanje zaposlenicima da digitalno definiraju vozni park i autobusne stanice.
+
 **Upravljenje vozilima i linijama**: Omogućavanje zaposlenicima da putem digitalnog sustava definiraju vozne linije, vozni red i prate lokaciju autobusa.
+
 **Informacijski sustav za putnike**: Implementacija digitalnih ekrana na autobusnim stanicama radi pružanja informacija o linijama, voznim redovima, detaljima o rutama i vremenima dolaska do odredišta.
+
 **Praćenje broja putnika**: Impelemtacija sustava za praćenje broja putnika radi boljeg upravljanja kapacitetom i planiranja ruta.
 
 ## Zadatak
