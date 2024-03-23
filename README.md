@@ -16,7 +16,7 @@ Putnici će imati pristup informacijama o autobusnim linijama i voznim redovima 
 U cilju poboljšanja točnosti polazaka i ubrzanja procesa ukrcavanja, planira se uvođenje elektroničkog sustava prodaje karata na autobusnim stanicama te samostalno očitavanje istih pri ulasku u autobus. Ovim mjerama će se osigurati brži proces ukrcavanja, praćenje broja putnika te efikasnije upravljanje vozilima parkom.
 
 ## Specifikacija projekta
-Digitalizacija poslovanja: Implementacija digitalnog sustava za upravljanje vozilima, stanicama, linijama i voznim redom radi zamjene postojećeg papirnatog sustava.
+<b>Digitalizacija poslovanja<b>: Implementacija digitalnog sustava za upravljanje vozilima, stanicama, linijama i voznim redom radi zamjene postojećeg papirnatog sustava.
 Definiranje vozila i stanica: Omogućavanje zaposlenicima da digitalno definiraju vozni park i autobusne stanice.
 Upravljenje vozilima i linijama: Omogućavanje zaposlenicima da putem digitalnog sustava definiraju vozne linije, vozni red i prate lokaciju autobusa.
 Informacijski sustav za putnike: Implementacija digitalnih ekrana na autobusnim stanicama radi pružanja informacija o linijama, voznim redovima, detaljima o rutama i vremenima dolaska do odredišta.
