@@ -13,7 +13,7 @@ Ime i prezime | bsostar21@foi.hr | 0016153818 | bsostar21
 Gradski autobusi Varaždina pružaju svakodnevni i redoviti prijevoz putnika gradskim i prigradskim relacijam. S obzirom na važnost usluge prijevoza, odlučili smo digitalizirati svoje poslovanje radi unaprijeđenja poslovnih procesa i poboljšanja kvalitete usluge.
 Kroz digitalni sustav, zaposlenici će imati mogućnost pregleda i upravljanje vozilima, stanicama, linijama i voznim redom, što će olakšati donošenje odluka i poboljšati efikasnost poslovanja.
 Putnici će imati pristup informacijama o autobusnim linijama i voznim redovima na digitalnim ekranima na stanicama, što će olakšati planiranje putovanja i smanjiti čekanje na autobus. Posebno će biti korisno umirovljenicima pružiti detaljne informacije o rutama i procijenjeno vrijeme putovanja do odredišta.
-U cilju poboljšanja točnosti polazaka i ubrzanja procesa ukrcavanja, planira se uvođenje elektroničkog sustava prodaje karata na autobusnim stanicama te samostalno očitavanje istih pri ulasku u autobus. Ovim mjerama će se osigurati brži proces ukrcavanja, praćenje broja putnika te efikasnije upravljanje vozilima parkom.
+U cilju poboljšanja točnosti polazaka i ubrzanja procesa ukrcavanja, planira se uvođenje prodaje karata na autobusnim stanicama te samostalno očitavanje istih pri ulasku u autobus. Ovim mjerama će se osigurati brži proces ukrcavanja, praćenje broja putnika te efikasnije upravljanje vozilima parkom.
 
 ## Specifikacija projekta
 **Digitalizacija poslovanja**: Implementacija digitalnog sustava za upravljanje vozilima, stanicama, linijama i voznim redom radi zamjene postojećeg papirnatog sustava.
