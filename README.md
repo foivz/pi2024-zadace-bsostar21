@@ -27,7 +27,7 @@ U cilju poboljšanja točnosti polazaka i ubrzanja procesa ukrcavanja, planira s
 **Praćenje broja putnika**: Impelemtacija sustava za praćenje broja putnika radi boljeg upravljanja kapacitetom i planiranja ruta.
 
 ## Zadatak
-(U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje!)
+https://github.com/foivz/pi2024-zadace-bsostar21/blob/master/Zadatak%20-%20Gradski%20prijevoz.pdf
 
 ## Resursi
 (Zadaće je obvezno predati u obliku Wiki stranica na ovom repozitoriju. Slike i druge artefakte koje ćete koristiti na wiki stranicama smjestite u mapu dokumentacije u repozitoriju!)
