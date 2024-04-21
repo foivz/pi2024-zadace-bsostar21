@@ -28,4 +28,5 @@ https://github.com/foivz/pi2024-zadace-bsostar21/blob/master/Zadatak%20-%20Grads
 
 ## Resursi
 Zadaća 1: https://github.com/foivz/pi2024-zadace-bsostar21/wiki/Tehni%C4%8Dka-dokumentacija
+
 Zadaća 2: https://github.com/foivz/pi2024-zadace-bsostar21/wiki/Specifikacija-dizajna-programskog-proizvoda-GLines
