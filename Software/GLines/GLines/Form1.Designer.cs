@@ -53,10 +53,11 @@
             this.gumbZaposlenici.ForeColor = System.Drawing.Color.White;
             this.gumbZaposlenici.Location = new System.Drawing.Point(186, 210);
             this.gumbZaposlenici.Name = "gumbZaposlenici";
-            this.gumbZaposlenici.Size = new System.Drawing.Size(111, 48);
+            this.gumbZaposlenici.Size = new System.Drawing.Size(119, 48);
             this.gumbZaposlenici.TabIndex = 1;
             this.gumbZaposlenici.Text = "ZAPOSLENICI";
             this.gumbZaposlenici.UseVisualStyleBackColor = false;
+            this.gumbZaposlenici.Click += new System.EventHandler(this.gumbZaposlenici_Click);
             // 
             // gumbPutnici
             // 

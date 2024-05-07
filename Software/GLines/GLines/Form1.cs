@@ -21,6 +21,14 @@ namespace GLines
         {
             FormaZaPutnike frmPutnici = new FormaZaPutnike();
             frmPutnici.ShowDialog();
+
+            
+        }
+
+        private void gumbZaposlenici_Click(object sender, EventArgs e)
+        {
+            FormaZaPrijavu frmPrijava = new FormaZaPrijavu();
+            frmPrijava.ShowDialog();
         }
     }
 }
