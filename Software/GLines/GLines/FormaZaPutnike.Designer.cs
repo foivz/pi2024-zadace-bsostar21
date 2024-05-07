@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.gumbNatrag = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,12 +70,26 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "VOZNI REDOVI GRADA VARAŽDINA";
             // 
+            // gumbNatrag
+            // 
+            this.gumbNatrag.BackColor = System.Drawing.Color.Black;
+            this.gumbNatrag.ForeColor = System.Drawing.Color.White;
+            this.gumbNatrag.Location = new System.Drawing.Point(662, 24);
+            this.gumbNatrag.Margin = new System.Windows.Forms.Padding(15);
+            this.gumbNatrag.Name = "gumbNatrag";
+            this.gumbNatrag.Size = new System.Drawing.Size(119, 48);
+            this.gumbNatrag.TabIndex = 7;
+            this.gumbNatrag.Text = "Natrag";
+            this.gumbNatrag.UseVisualStyleBackColor = false;
+            this.gumbNatrag.Click += new System.EventHandler(this.gumbNatrag_Click);
+            // 
             // FormaZaPutnike
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.gumbNatrag);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
@@ -91,5 +106,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button gumbNatrag;
     }
 }

@@ -36,8 +36,17 @@ namespace GLines
             {
                 if(txtKorIMe.Text == korisnickoIme && txtLozinka.Text == lozinka)
                 {
+                    
+
                     MessageBox.Show("Uspješna prijava!", "Dobrodošli",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    FormaZaZaposlenike frmZaposlenici = new FormaZaZaposlenike();
+                    Hide();
+                    frmZaposlenici.ShowDialog();
+                    Close();
+
+
                 }
                 else
                 {
@@ -46,5 +55,6 @@ namespace GLines
                 }
             }
         }
+
     }
 }

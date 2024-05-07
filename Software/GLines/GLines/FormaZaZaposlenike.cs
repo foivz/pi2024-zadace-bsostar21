@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace GLines
 {
-    public partial class FormaZaPutnike : Form
+    public partial class FormaZaZaposlenike : Form
     {
-        public FormaZaPutnike()
+        public FormaZaZaposlenike()
         {
             InitializeComponent();
         }
 
-        private void gumbNatrag_Click(object sender, EventArgs e)
+        private void gumbOdjava_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Uspješno ste odjavljeni", "Odjava", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }
     }
