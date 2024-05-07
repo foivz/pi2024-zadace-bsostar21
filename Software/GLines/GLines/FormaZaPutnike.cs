@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace GLines
 {
-    public partial class Form1 : Form
+    public partial class FormaZaPutnike : Form
     {
-        public Form1()
+        public FormaZaPutnike()
         {
             InitializeComponent();
-        }
-
-        private void gumbPutnici_Click(object sender, EventArgs e)
-        {
-            FormaZaPutnike frmPutnici = new FormaZaPutnike();
-            frmPutnici.ShowDialog();
         }
     }
 }

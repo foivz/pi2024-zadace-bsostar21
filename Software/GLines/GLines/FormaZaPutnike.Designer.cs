@@ -1,6 +1,6 @@
 ﻿namespace GLines
 {
-    partial class Form1
+    partial class FormaZaPutnike
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.gumbZaposlenici = new System.Windows.Forms.Button();
-            this.gumbPutnici = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -44,43 +45,42 @@
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(10);
             this.label1.Size = new System.Drawing.Size(192, 74);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 1;
             this.label1.Text = "GLines";
             // 
-            // gumbZaposlenici
+            // dataGridView1
             // 
-            this.gumbZaposlenici.BackColor = System.Drawing.Color.Black;
-            this.gumbZaposlenici.ForeColor = System.Drawing.Color.White;
-            this.gumbZaposlenici.Location = new System.Drawing.Point(186, 210);
-            this.gumbZaposlenici.Name = "gumbZaposlenici";
-            this.gumbZaposlenici.Size = new System.Drawing.Size(111, 48);
-            this.gumbZaposlenici.TabIndex = 1;
-            this.gumbZaposlenici.Text = "ZAPOSLENICI";
-            this.gumbZaposlenici.UseVisualStyleBackColor = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(19, 144);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(762, 297);
+            this.dataGridView1.TabIndex = 2;
             // 
-            // gumbPutnici
+            // label2
             // 
-            this.gumbPutnici.BackColor = System.Drawing.Color.Black;
-            this.gumbPutnici.ForeColor = System.Drawing.Color.White;
-            this.gumbPutnici.Location = new System.Drawing.Point(495, 210);
-            this.gumbPutnici.Name = "gumbPutnici";
-            this.gumbPutnici.Size = new System.Drawing.Size(111, 48);
-            this.gumbPutnici.TabIndex = 2;
-            this.gumbPutnici.Text = "PUTNICI";
-            this.gumbPutnici.UseVisualStyleBackColor = false;
-            this.gumbPutnici.Click += new System.EventHandler(this.gumbPutnici_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(152, 102);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(487, 32);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "VOZNI REDOVI GRADA VARAŽDINA";
             // 
-            // Form1
+            // FormaZaPutnike
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(782, 453);
-            this.Controls.Add(this.gumbPutnici);
-            this.Controls.Add(this.gumbZaposlenici);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormaZaPutnike";
+            this.Text = "FormaZaPutnike";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,8 +89,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button gumbZaposlenici;
-        private System.Windows.Forms.Button gumbPutnici;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label2;
     }
 }
-
