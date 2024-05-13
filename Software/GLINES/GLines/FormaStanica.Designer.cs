@@ -101,6 +101,7 @@
             this.gumbAzurirajStanicu.TabIndex = 16;
             this.gumbAzurirajStanicu.Text = "Ažuriraj";
             this.gumbAzurirajStanicu.UseVisualStyleBackColor = false;
+            this.gumbAzurirajStanicu.Click += new System.EventHandler(this.gumbAzurirajStanicu_Click);
             // 
             // gumbDodajStanicu
             // 

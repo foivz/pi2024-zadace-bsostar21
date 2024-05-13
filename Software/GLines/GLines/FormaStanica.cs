@@ -27,5 +27,11 @@ namespace GLines
             FormaDodajStanicu formDodajStanicu = new FormaDodajStanicu();
             formDodajStanicu.ShowDialog();
         }
+
+        private void gumbAzurirajStanicu_Click(object sender, EventArgs e)
+        {
+            FormaAzurirajStanicu formAzurirajStanicu = new FormaAzurirajStanicu();
+            formAzurirajStanicu.ShowDialog();
+        }
     }
 }

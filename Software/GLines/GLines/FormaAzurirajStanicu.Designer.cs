@@ -1,6 +1,6 @@
 ﻿namespace GLines
 {
-    partial class FormaDodajStanicu
+    partial class FormaAzurirajStanicu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gumbAzurirajStanicu = new System.Windows.Forms.Button();
+            this.gumbDodajStanicu = new System.Windows.Forms.Button();
             this.gumbNatrag = new System.Windows.Forms.Button();
             this.txtAdresa = new System.Windows.Forms.TextBox();
             this.txtNazivStanice = new System.Windows.Forms.TextBox();
@@ -36,17 +36,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // gumbAzurirajStanicu
+            // gumbDodajStanicu
             // 
-            this.gumbAzurirajStanicu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.gumbAzurirajStanicu.ForeColor = System.Drawing.Color.White;
-            this.gumbAzurirajStanicu.Location = new System.Drawing.Point(338, 30);
-            this.gumbAzurirajStanicu.Margin = new System.Windows.Forms.Padding(15);
-            this.gumbAzurirajStanicu.Name = "gumbAzurirajStanicu";
-            this.gumbAzurirajStanicu.Size = new System.Drawing.Size(119, 48);
-            this.gumbAzurirajStanicu.TabIndex = 27;
-            this.gumbAzurirajStanicu.Text = "Ažuriraj";
-            this.gumbAzurirajStanicu.UseVisualStyleBackColor = false;
+            this.gumbDodajStanicu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.gumbDodajStanicu.ForeColor = System.Drawing.Color.White;
+            this.gumbDodajStanicu.Location = new System.Drawing.Point(338, 30);
+            this.gumbDodajStanicu.Margin = new System.Windows.Forms.Padding(15);
+            this.gumbDodajStanicu.Name = "gumbDodajStanicu";
+            this.gumbDodajStanicu.Size = new System.Drawing.Size(119, 48);
+            this.gumbDodajStanicu.TabIndex = 33;
+            this.gumbDodajStanicu.Text = "Dodaj";
+            this.gumbDodajStanicu.UseVisualStyleBackColor = false;
             // 
             // gumbNatrag
             // 
@@ -56,7 +56,7 @@
             this.gumbNatrag.Margin = new System.Windows.Forms.Padding(15);
             this.gumbNatrag.Name = "gumbNatrag";
             this.gumbNatrag.Size = new System.Drawing.Size(119, 48);
-            this.gumbNatrag.TabIndex = 26;
+            this.gumbNatrag.TabIndex = 32;
             this.gumbNatrag.Text = "Odustani";
             this.gumbNatrag.UseVisualStyleBackColor = false;
             this.gumbNatrag.Click += new System.EventHandler(this.gumbNatrag_Click);
@@ -66,14 +66,14 @@
             this.txtAdresa.Location = new System.Drawing.Point(27, 130);
             this.txtAdresa.Name = "txtAdresa";
             this.txtAdresa.Size = new System.Drawing.Size(181, 22);
-            this.txtAdresa.TabIndex = 22;
+            this.txtAdresa.TabIndex = 31;
             // 
             // txtNazivStanice
             // 
             this.txtNazivStanice.Location = new System.Drawing.Point(27, 56);
             this.txtNazivStanice.Name = "txtNazivStanice";
             this.txtNazivStanice.Size = new System.Drawing.Size(181, 22);
-            this.txtNazivStanice.TabIndex = 21;
+            this.txtNazivStanice.TabIndex = 30;
             // 
             // label2
             // 
@@ -82,7 +82,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 16);
-            this.label2.TabIndex = 15;
+            this.label2.TabIndex = 29;
             this.label2.Text = "Adresa: ";
             // 
             // label1
@@ -92,23 +92,23 @@
             this.label1.Margin = new System.Windows.Forms.Padding(15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 16);
-            this.label1.TabIndex = 14;
+            this.label1.TabIndex = 28;
             this.label1.Text = "Naziv: ";
             // 
-            // FormaDodajStanicu
+            // FormaAzurirajStanicu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(481, 182);
-            this.Controls.Add(this.gumbAzurirajStanicu);
+            this.Controls.Add(this.gumbDodajStanicu);
             this.Controls.Add(this.gumbNatrag);
             this.Controls.Add(this.txtAdresa);
             this.Controls.Add(this.txtNazivStanice);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FormaDodajStanicu";
-            this.Text = "FormaDodajStanicu";
+            this.Name = "FormaAzurirajStanicu";
+            this.Text = "FormaAzurirajStanicu";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,7 +116,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button gumbAzurirajStanicu;
+        private System.Windows.Forms.Button gumbDodajStanicu;
         private System.Windows.Forms.Button gumbNatrag;
         private System.Windows.Forms.TextBox txtAdresa;
         private System.Windows.Forms.TextBox txtNazivStanice;
