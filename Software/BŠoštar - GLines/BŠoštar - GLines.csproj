@@ -64,6 +64,12 @@
     <Compile Include="FormaZaPutnike.Designer.cs">
       <DependentUpon>FormaZaPutnike.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaZaVozila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZaVozila.Designer.cs">
+      <DependentUpon>FormaZaVozila.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormaZaZaposlenike.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormaZaPutnike.resx">
       <DependentUpon>FormaZaPutnike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaZaVozila.resx">
+      <DependentUpon>FormaZaVozila.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaZaZaposlenike.resx">
       <DependentUpon>FormaZaZaposlenike.cs</DependentUpon>

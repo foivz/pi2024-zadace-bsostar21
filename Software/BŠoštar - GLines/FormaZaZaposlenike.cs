@@ -24,7 +24,8 @@ namespace BŠoštar___GLines
 
         private void gumbVozilo_Click(object sender, EventArgs e)
         {
-
+            FormaZaVozila formaZaVozila = new FormaZaVozila();
+            formaZaVozila.ShowDialog();
         }
 
         private void gumbStanica_Click(object sender, EventArgs e)

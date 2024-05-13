@@ -65,8 +65,8 @@
             // 
             this.gumbVozilo.BackColor = System.Drawing.Color.Black;
             this.gumbVozilo.ForeColor = System.Drawing.Color.Transparent;
-            this.gumbVozilo.Location = new System.Drawing.Point(24, 378);
-            this.gumbVozilo.Margin = new System.Windows.Forms.Padding(15);
+            this.gumbVozilo.Location = new System.Drawing.Point(29, 378);
+            this.gumbVozilo.Margin = new System.Windows.Forms.Padding(20);
             this.gumbVozilo.Name = "gumbVozilo";
             this.gumbVozilo.Size = new System.Drawing.Size(110, 51);
             this.gumbVozilo.TabIndex = 9;
@@ -78,7 +78,7 @@
             // 
             this.gumbStanica.BackColor = System.Drawing.Color.Black;
             this.gumbStanica.ForeColor = System.Drawing.Color.Transparent;
-            this.gumbStanica.Location = new System.Drawing.Point(164, 378);
+            this.gumbStanica.Location = new System.Drawing.Point(174, 378);
             this.gumbStanica.Margin = new System.Windows.Forms.Padding(15);
             this.gumbStanica.Name = "gumbStanica";
             this.gumbStanica.Size = new System.Drawing.Size(110, 51);
@@ -91,7 +91,7 @@
             // 
             this.gumbLinija.BackColor = System.Drawing.Color.Black;
             this.gumbLinija.ForeColor = System.Drawing.Color.Transparent;
-            this.gumbLinija.Location = new System.Drawing.Point(303, 378);
+            this.gumbLinija.Location = new System.Drawing.Point(314, 378);
             this.gumbLinija.Margin = new System.Windows.Forms.Padding(15);
             this.gumbLinija.Name = "gumbLinija";
             this.gumbLinija.Size = new System.Drawing.Size(110, 51);
@@ -104,7 +104,7 @@
             // 
             this.gumbVozniRed.BackColor = System.Drawing.Color.Black;
             this.gumbVozniRed.ForeColor = System.Drawing.Color.Transparent;
-            this.gumbVozniRed.Location = new System.Drawing.Point(431, 378);
+            this.gumbVozniRed.Location = new System.Drawing.Point(454, 378);
             this.gumbVozniRed.Margin = new System.Windows.Forms.Padding(15);
             this.gumbVozniRed.Name = "gumbVozniRed";
             this.gumbVozniRed.Size = new System.Drawing.Size(110, 51);
@@ -117,8 +117,8 @@
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(648, 378);
-            this.button5.Margin = new System.Windows.Forms.Padding(15);
+            this.button5.Location = new System.Drawing.Point(643, 378);
+            this.button5.Margin = new System.Windows.Forms.Padding(15, 15, 20, 15);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(110, 51);
             this.button5.TabIndex = 13;
