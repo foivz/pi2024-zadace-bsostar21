@@ -36,7 +36,8 @@ namespace BŠoštar___GLines
 
         private void gumbLinija_Click(object sender, EventArgs e)
         {
-
+            FormaZaLiniju formaZaLiniju = new FormaZaLiniju();
+            formaZaLiniju.ShowDialog(); 
         }
 
         private void gumbVozniRed_Click(object sender, EventArgs e)
