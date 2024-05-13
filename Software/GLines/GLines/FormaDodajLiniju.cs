@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GLines
 {
-    public partial class FormaLinija : Form
+    public partial class FormaDodajLiniju : Form
     {
-        public FormaLinija()
+        public FormaDodajLiniju()
         {
             InitializeComponent();
         }
@@ -20,17 +20,6 @@ namespace GLines
         private void gumbNatrag_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void gumbDodajLiniju_Click(object sender, EventArgs e)
-        {
-            FormaDodajLiniju formDodajLiniju = new FormaDodajLiniju();
-            formDodajLiniju.ShowDialog();
-        }
-
-        private void gumbAzurirajLiniju_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
