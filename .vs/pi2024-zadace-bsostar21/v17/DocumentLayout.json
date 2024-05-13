@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Acer\\source\\repos\\pi2024-zadace-bsostar21\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A12494E-519F-40F7-8580-CFBD901C2DED}|Software\\B\u0160o\u0161tar - GLines\\B\u0160o\u0161tar - GLines.csproj|c:\\users\\acer\\source\\repos\\pi2024-zadace-bsostar21\\software\\b\u0161o\u0161tar - glines\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9A12494E-519F-40F7-8580-CFBD901C2DED}|Software\\B\u0160o\u0161tar - GLines\\B\u0160o\u0161tar - GLines.csproj|solutionrelative:software\\b\u0161o\u0161tar - glines\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\pi2024-zadace-bsostar21\\Software\\B\u0160o\u0161tar - GLines\\Form1.cs",
+              "RelativeDocumentMoniker": "Software\\B\u0160o\u0161tar - GLines\\Form1.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\pi2024-zadace-bsostar21\\Software\\B\u0160o\u0161tar - GLines\\Form1.cs [Design]",
+              "RelativeToolTip": "Software\\B\u0160o\u0161tar - GLines\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:42:06.667Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
