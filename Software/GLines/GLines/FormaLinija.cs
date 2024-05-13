@@ -30,7 +30,8 @@ namespace GLines
 
         private void gumbAzurirajLiniju_Click(object sender, EventArgs e)
         {
-
+            FormaAzurirajLiniju formAzurirajLiniju = new FormaAzurirajLiniju();
+            formAzurirajLiniju.ShowDialog();
         }
     }
 }
