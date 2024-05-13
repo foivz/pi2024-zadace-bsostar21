@@ -73,6 +73,7 @@
             this.gumbVozilo.TabIndex = 6;
             this.gumbVozilo.Text = "Vozilo";
             this.gumbVozilo.UseVisualStyleBackColor = false;
+            this.gumbVozilo.Click += new System.EventHandler(this.gumbVozilo_Click);
             // 
             // gumbVozniRed
             // 

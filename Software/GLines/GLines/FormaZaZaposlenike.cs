@@ -22,5 +22,11 @@ namespace GLines
             MessageBox.Show("Uspješno ste odjavljeni", "Odjava", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }
+
+        private void gumbVozilo_Click(object sender, EventArgs e)
+        {
+            FormaVozila formVozilo = new FormaVozila();
+            formVozilo.ShowDialog();
+        }
     }
 }
