@@ -101,6 +101,7 @@
             this.gumbAzurirajStanicu.TabIndex = 16;
             this.gumbAzurirajStanicu.Text = "Ažuriraj";
             this.gumbAzurirajStanicu.UseVisualStyleBackColor = false;
+            this.gumbAzurirajStanicu.Click += new System.EventHandler(this.gumbAzurirajStanicu_Click);
             // 
             // gumbDodajStanicu
             // 
@@ -113,6 +114,7 @@
             this.gumbDodajStanicu.TabIndex = 15;
             this.gumbDodajStanicu.Text = "Dodaj";
             this.gumbDodajStanicu.UseVisualStyleBackColor = false;
+            this.gumbDodajStanicu.Click += new System.EventHandler(this.gumbDodajStanicu_Click);
             // 
             // label1
             // 
