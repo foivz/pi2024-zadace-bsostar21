@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GLines
 {
-    public partial class FormaStanica : Form
+    public partial class FormaDodajStanicu : Form
     {
-        public FormaStanica()
+        public FormaDodajStanicu()
         {
             InitializeComponent();
         }
@@ -20,12 +20,6 @@ namespace GLines
         private void gumbNatrag_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void gumbDodajStanicu_Click(object sender, EventArgs e)
-        {
-            FormaDodajStanicu formDodajStanicu = new FormaDodajStanicu();
-            formDodajStanicu.ShowDialog();
         }
     }
 }
