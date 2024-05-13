@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dvgPutnici = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.gumbZaposlenici = new System.Windows.Forms.Button();
+            this.gumbNatrag = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dvgPutnici)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,18 +69,18 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "VOZNI RED GRADA VARAŽDINA";
             // 
-            // gumbZaposlenici
+            // gumbNatrag
             // 
-            this.gumbZaposlenici.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.gumbZaposlenici.ForeColor = System.Drawing.Color.Black;
-            this.gumbZaposlenici.Location = new System.Drawing.Point(660, 29);
-            this.gumbZaposlenici.Margin = new System.Windows.Forms.Padding(200);
-            this.gumbZaposlenici.Name = "gumbZaposlenici";
-            this.gumbZaposlenici.Size = new System.Drawing.Size(110, 51);
-            this.gumbZaposlenici.TabIndex = 4;
-            this.gumbZaposlenici.Text = "Natrag";
-            this.gumbZaposlenici.UseVisualStyleBackColor = false;
-            this.gumbZaposlenici.Click += new System.EventHandler(this.gumbZaposlenici_Click);
+            this.gumbNatrag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.gumbNatrag.ForeColor = System.Drawing.Color.Black;
+            this.gumbNatrag.Location = new System.Drawing.Point(660, 29);
+            this.gumbNatrag.Margin = new System.Windows.Forms.Padding(200);
+            this.gumbNatrag.Name = "gumbNatrag";
+            this.gumbNatrag.Size = new System.Drawing.Size(110, 51);
+            this.gumbNatrag.TabIndex = 4;
+            this.gumbNatrag.Text = "Natrag";
+            this.gumbNatrag.UseVisualStyleBackColor = false;
+            this.gumbNatrag.Click += new System.EventHandler(this.gumbZaposlenici_Click);
             // 
             // FormaZaPutnike
             // 
@@ -88,7 +88,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(782, 382);
-            this.Controls.Add(this.gumbZaposlenici);
+            this.Controls.Add(this.gumbNatrag);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dvgPutnici);
             this.Controls.Add(this.label1);
@@ -105,6 +105,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dvgPutnici;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button gumbZaposlenici;
+        private System.Windows.Forms.Button gumbNatrag;
     }
 }

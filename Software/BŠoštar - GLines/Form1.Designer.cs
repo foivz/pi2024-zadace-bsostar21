@@ -58,6 +58,7 @@
             this.gumbZaposlenici.TabIndex = 1;
             this.gumbZaposlenici.Text = "Zaposlenici";
             this.gumbZaposlenici.UseVisualStyleBackColor = false;
+            this.gumbZaposlenici.Click += new System.EventHandler(this.gumbZaposlenici_Click);
             // 
             // gumbPutnici
             // 

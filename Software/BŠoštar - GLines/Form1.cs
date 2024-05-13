@@ -27,5 +27,13 @@ namespace BŠoštar___GLines
         {
             this.Close();
         }
+
+        private void gumbZaposlenici_Click(object sender, EventArgs e)
+        {
+            FormaZaPrijavu formaZaPrijavu = new FormaZaPrijavu();
+            Hide();
+            formaZaPrijavu.ShowDialog();
+            Close();
+        }
     }
 }
