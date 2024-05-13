@@ -10,20 +10,14 @@ using System.Windows.Forms;
 
 namespace BŠoštar___GLines
 {
-    public partial class Form1 : Form
+    public partial class FormaZaPutnike : Form
     {
-        public Form1()
+        public FormaZaPutnike()
         {
             InitializeComponent();
         }
 
-        private void gumbPutnici_Click(object sender, EventArgs e)
-        {
-            FormaZaPutnike formaZaPutnike = new FormaZaPutnike();
-            formaZaPutnike.ShowDialog();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void gumbZaposlenici_Click(object sender, EventArgs e)
         {
             this.Close();
         }
