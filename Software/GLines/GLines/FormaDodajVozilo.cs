@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GLines
 {
-    public partial class FormaVozila : Form
+    public partial class FormaDodajVozilo : Form
     {
-        public FormaVozila()
+        public FormaDodajVozilo()
         {
             InitializeComponent();
         }
@@ -20,12 +20,6 @@ namespace GLines
         private void gumbNatrag_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void gumbDodajVozilo_Click(object sender, EventArgs e)
-        {
-            FormaDodajVozilo formDodajVozilo = new FormaDodajVozilo();
-            formDodajVozilo.ShowDialog();
         }
     }
 }

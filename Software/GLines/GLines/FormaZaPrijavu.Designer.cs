@@ -71,18 +71,21 @@
             // 
             // btnPrijava
             // 
+            this.btnPrijava.BackColor = System.Drawing.Color.Black;
+            this.btnPrijava.ForeColor = System.Drawing.Color.White;
             this.btnPrijava.Location = new System.Drawing.Point(265, 131);
             this.btnPrijava.Name = "btnPrijava";
             this.btnPrijava.Size = new System.Drawing.Size(108, 31);
             this.btnPrijava.TabIndex = 4;
             this.btnPrijava.Text = "Prijavi se";
-            this.btnPrijava.UseVisualStyleBackColor = true;
+            this.btnPrijava.UseVisualStyleBackColor = false;
             this.btnPrijava.Click += new System.EventHandler(this.btnPrijava_Click);
             // 
             // FormaZaPrijavu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(385, 182);
             this.Controls.Add(this.btnPrijava);
             this.Controls.Add(this.txtLozinka);

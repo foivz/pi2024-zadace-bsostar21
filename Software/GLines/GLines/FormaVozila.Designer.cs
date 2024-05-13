@@ -64,6 +64,7 @@
             this.gumbDodajVozilo.TabIndex = 7;
             this.gumbDodajVozilo.Text = "Dodaj";
             this.gumbDodajVozilo.UseVisualStyleBackColor = false;
+            this.gumbDodajVozilo.Click += new System.EventHandler(this.gumbDodajVozilo_Click);
             // 
             // gumbAzurirajVozilo
             // 
