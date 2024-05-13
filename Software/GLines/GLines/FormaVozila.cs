@@ -27,5 +27,11 @@ namespace GLines
             FormaDodajVozilo formDodajVozilo = new FormaDodajVozilo();
             formDodajVozilo.ShowDialog();
         }
+
+        private void gumbAzurirajVozilo_Click(object sender, EventArgs e)
+        {
+            FormaAzurirajVozilo formAzurirajVOzilo = new FormaAzurirajVozilo();
+            formAzurirajVOzilo.ShowDialog();
+        }
     }
 }
