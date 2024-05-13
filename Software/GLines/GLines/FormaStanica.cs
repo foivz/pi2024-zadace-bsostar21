@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GLines
 {
-    public partial class FormaVozila : Form
+    public partial class FormaStanica : Form
     {
-        public FormaVozila()
+        public FormaStanica()
         {
             InitializeComponent();
-        }
-
-        private void gumbNatrag_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

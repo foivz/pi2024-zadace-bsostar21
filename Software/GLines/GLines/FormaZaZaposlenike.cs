@@ -28,5 +28,10 @@ namespace GLines
             FormaVozila formVozilo = new FormaVozila();
             formVozilo.ShowDialog();
         }
+
+        private void gumbStanica_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

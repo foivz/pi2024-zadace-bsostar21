@@ -110,6 +110,7 @@
             this.gumbStanica.TabIndex = 9;
             this.gumbStanica.Text = "Stanica";
             this.gumbStanica.UseVisualStyleBackColor = false;
+            this.gumbStanica.Click += new System.EventHandler(this.gumbStanica_Click);
             // 
             // gumbOdjava
             // 

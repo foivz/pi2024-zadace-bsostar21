@@ -30,13 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.gumbDodajVozilo = new System.Windows.Forms.Button();
-            this.gumbAžurirajVozilo = new System.Windows.Forms.Button();
+            this.gumbAzurirajVozilo = new System.Windows.Forms.Button();
             this.gumbObrisiVozilo = new System.Windows.Forms.Button();
             this.gumbNatrag = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvVozilo = new System.Windows.Forms.DataGridView();
             this.txtPretrazivanje = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVozilo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -65,17 +65,17 @@
             this.gumbDodajVozilo.Text = "Dodaj";
             this.gumbDodajVozilo.UseVisualStyleBackColor = false;
             // 
-            // gumbAžurirajVozilo
+            // gumbAzurirajVozilo
             // 
-            this.gumbAžurirajVozilo.BackColor = System.Drawing.Color.Black;
-            this.gumbAžurirajVozilo.ForeColor = System.Drawing.Color.White;
-            this.gumbAžurirajVozilo.Location = new System.Drawing.Point(173, 358);
-            this.gumbAžurirajVozilo.Margin = new System.Windows.Forms.Padding(15);
-            this.gumbAžurirajVozilo.Name = "gumbAžurirajVozilo";
-            this.gumbAžurirajVozilo.Size = new System.Drawing.Size(119, 48);
-            this.gumbAžurirajVozilo.TabIndex = 8;
-            this.gumbAžurirajVozilo.Text = "Ažuriraj";
-            this.gumbAžurirajVozilo.UseVisualStyleBackColor = false;
+            this.gumbAzurirajVozilo.BackColor = System.Drawing.Color.Black;
+            this.gumbAzurirajVozilo.ForeColor = System.Drawing.Color.White;
+            this.gumbAzurirajVozilo.Location = new System.Drawing.Point(173, 358);
+            this.gumbAzurirajVozilo.Margin = new System.Windows.Forms.Padding(15);
+            this.gumbAzurirajVozilo.Name = "gumbAzurirajVozilo";
+            this.gumbAzurirajVozilo.Size = new System.Drawing.Size(119, 48);
+            this.gumbAzurirajVozilo.TabIndex = 8;
+            this.gumbAzurirajVozilo.Text = "Ažuriraj";
+            this.gumbAzurirajVozilo.UseVisualStyleBackColor = false;
             // 
             // gumbObrisiVozilo
             // 
@@ -100,16 +100,17 @@
             this.gumbNatrag.TabIndex = 10;
             this.gumbNatrag.Text = "Natrag";
             this.gumbNatrag.UseVisualStyleBackColor = false;
+            this.gumbNatrag.Click += new System.EventHandler(this.gumbNatrag_Click);
             // 
-            // dataGridView1
+            // dgvVozilo
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 122);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(751, 218);
-            this.dataGridView1.TabIndex = 11;
+            this.dgvVozilo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVozilo.Location = new System.Drawing.Point(25, 122);
+            this.dgvVozilo.Name = "dgvVozilo";
+            this.dgvVozilo.RowHeadersWidth = 51;
+            this.dgvVozilo.RowTemplate.Height = 24;
+            this.dgvVozilo.Size = new System.Drawing.Size(751, 218);
+            this.dgvVozilo.TabIndex = 11;
             // 
             // txtPretrazivanje
             // 
@@ -135,15 +136,15 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPretrazivanje);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvVozilo);
             this.Controls.Add(this.gumbNatrag);
             this.Controls.Add(this.gumbObrisiVozilo);
-            this.Controls.Add(this.gumbAžurirajVozilo);
+            this.Controls.Add(this.gumbAzurirajVozilo);
             this.Controls.Add(this.gumbDodajVozilo);
             this.Controls.Add(this.label1);
             this.Name = "FormaVozila";
             this.Text = "FormaVozila";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVozilo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,10 +154,10 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button gumbDodajVozilo;
-        private System.Windows.Forms.Button gumbAžurirajVozilo;
+        private System.Windows.Forms.Button gumbAzurirajVozilo;
         private System.Windows.Forms.Button gumbObrisiVozilo;
         private System.Windows.Forms.Button gumbNatrag;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvVozilo;
         private System.Windows.Forms.TextBox txtPretrazivanje;
         private System.Windows.Forms.Label label2;
     }

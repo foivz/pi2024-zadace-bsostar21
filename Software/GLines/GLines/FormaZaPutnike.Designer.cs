@@ -72,7 +72,7 @@
             // 
             // gumbNatrag
             // 
-            this.gumbNatrag.BackColor = System.Drawing.Color.Black;
+            this.gumbNatrag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gumbNatrag.ForeColor = System.Drawing.Color.White;
             this.gumbNatrag.Location = new System.Drawing.Point(662, 24);
             this.gumbNatrag.Margin = new System.Windows.Forms.Padding(15);
