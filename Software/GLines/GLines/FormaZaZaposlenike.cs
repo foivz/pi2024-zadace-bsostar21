@@ -40,5 +40,11 @@ namespace GLines
             FormaLinija formLinija = new FormaLinija();
             formLinija.ShowDialog();
         }
+
+        private void gumbVozniRed_Click(object sender, EventArgs e)
+        {
+            FormaVozniRed formVRed = new FormaVozniRed();
+            formVRed.ShowDialog();
+        }
     }
 }

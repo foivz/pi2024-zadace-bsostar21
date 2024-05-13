@@ -86,6 +86,7 @@
             this.gumbVozniRed.TabIndex = 7;
             this.gumbVozniRed.Text = "Vozni red";
             this.gumbVozniRed.UseVisualStyleBackColor = false;
+            this.gumbVozniRed.Click += new System.EventHandler(this.gumbVozniRed_Click);
             // 
             // gumbLinija
             // 
