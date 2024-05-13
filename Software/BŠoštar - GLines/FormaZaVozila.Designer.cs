@@ -33,8 +33,8 @@
             this.txtPretrazivanjeVozila = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.gumbDodajVozilo = new System.Windows.Forms.Button();
-            this.btnAzurirajVozilo = new System.Windows.Forms.Button();
-            this.btnObrisiVozilo = new System.Windows.Forms.Button();
+            this.gumbAzurirajVozilo = new System.Windows.Forms.Button();
+            this.gumbObrisiVozilo = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -94,29 +94,29 @@
             this.gumbDodajVozilo.Text = "Dodaj";
             this.gumbDodajVozilo.UseVisualStyleBackColor = false;
             // 
-            // btnAzurirajVozilo
+            // gumbAzurirajVozilo
             // 
-            this.btnAzurirajVozilo.BackColor = System.Drawing.Color.Black;
-            this.btnAzurirajVozilo.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAzurirajVozilo.Location = new System.Drawing.Point(169, 378);
-            this.btnAzurirajVozilo.Margin = new System.Windows.Forms.Padding(15);
-            this.btnAzurirajVozilo.Name = "btnAzurirajVozilo";
-            this.btnAzurirajVozilo.Size = new System.Drawing.Size(110, 51);
-            this.btnAzurirajVozilo.TabIndex = 11;
-            this.btnAzurirajVozilo.Text = "Ažuriraj";
-            this.btnAzurirajVozilo.UseVisualStyleBackColor = false;
+            this.gumbAzurirajVozilo.BackColor = System.Drawing.Color.Black;
+            this.gumbAzurirajVozilo.ForeColor = System.Drawing.Color.Transparent;
+            this.gumbAzurirajVozilo.Location = new System.Drawing.Point(169, 378);
+            this.gumbAzurirajVozilo.Margin = new System.Windows.Forms.Padding(15);
+            this.gumbAzurirajVozilo.Name = "gumbAzurirajVozilo";
+            this.gumbAzurirajVozilo.Size = new System.Drawing.Size(110, 51);
+            this.gumbAzurirajVozilo.TabIndex = 11;
+            this.gumbAzurirajVozilo.Text = "Ažuriraj";
+            this.gumbAzurirajVozilo.UseVisualStyleBackColor = false;
             // 
-            // btnObrisiVozilo
+            // gumbObrisiVozilo
             // 
-            this.btnObrisiVozilo.BackColor = System.Drawing.Color.Black;
-            this.btnObrisiVozilo.ForeColor = System.Drawing.Color.Transparent;
-            this.btnObrisiVozilo.Location = new System.Drawing.Point(309, 378);
-            this.btnObrisiVozilo.Margin = new System.Windows.Forms.Padding(15);
-            this.btnObrisiVozilo.Name = "btnObrisiVozilo";
-            this.btnObrisiVozilo.Size = new System.Drawing.Size(110, 51);
-            this.btnObrisiVozilo.TabIndex = 12;
-            this.btnObrisiVozilo.Text = "Obriši";
-            this.btnObrisiVozilo.UseVisualStyleBackColor = false;
+            this.gumbObrisiVozilo.BackColor = System.Drawing.Color.Black;
+            this.gumbObrisiVozilo.ForeColor = System.Drawing.Color.Transparent;
+            this.gumbObrisiVozilo.Location = new System.Drawing.Point(309, 378);
+            this.gumbObrisiVozilo.Margin = new System.Windows.Forms.Padding(15);
+            this.gumbObrisiVozilo.Name = "gumbObrisiVozilo";
+            this.gumbObrisiVozilo.Size = new System.Drawing.Size(110, 51);
+            this.gumbObrisiVozilo.TabIndex = 12;
+            this.gumbObrisiVozilo.Text = "Obriši";
+            this.gumbObrisiVozilo.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
@@ -138,8 +138,8 @@
             this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(782, 453);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.btnObrisiVozilo);
-            this.Controls.Add(this.btnAzurirajVozilo);
+            this.Controls.Add(this.gumbObrisiVozilo);
+            this.Controls.Add(this.gumbAzurirajVozilo);
             this.Controls.Add(this.gumbDodajVozilo);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtPretrazivanjeVozila);
@@ -160,8 +160,8 @@
         private System.Windows.Forms.TextBox txtPretrazivanjeVozila;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button gumbDodajVozilo;
-        private System.Windows.Forms.Button btnAzurirajVozilo;
-        private System.Windows.Forms.Button btnObrisiVozilo;
+        private System.Windows.Forms.Button gumbAzurirajVozilo;
+        private System.Windows.Forms.Button gumbObrisiVozilo;
         private System.Windows.Forms.Button button5;
     }
 }

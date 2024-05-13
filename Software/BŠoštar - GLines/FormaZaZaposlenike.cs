@@ -42,7 +42,8 @@ namespace BŠoštar___GLines
 
         private void gumbVozniRed_Click(object sender, EventArgs e)
         {
-
+            FormaZaVozniRed formaZaVozniRed = new FormaZaVozniRed();
+            formaZaVozniRed.ShowDialog();
         }
     }
 }

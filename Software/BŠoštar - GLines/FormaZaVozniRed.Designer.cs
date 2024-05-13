@@ -1,6 +1,6 @@
 ﻿namespace BŠoštar___GLines
 {
-    partial class FormaZaLiniju
+    partial class FormaZaVozniRed
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.button5 = new System.Windows.Forms.Button();
-            this.gumbObrisiLiniju = new System.Windows.Forms.Button();
-            this.gumbAzurirajLiniju = new System.Windows.Forms.Button();
-            this.gumbDodajLiniju = new System.Windows.Forms.Button();
+            this.gumbObrisiVozniRed = new System.Windows.Forms.Button();
+            this.gumbAzurirajVozniRed = new System.Windows.Forms.Button();
+            this.gumbDodajVozniRed = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtPretrazivanjeLinije = new System.Windows.Forms.TextBox();
+            this.txtPretrazivanjeVoznogReda = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -47,46 +47,46 @@
             this.button5.Margin = new System.Windows.Forms.Padding(15);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(110, 51);
-            this.button5.TabIndex = 30;
+            this.button5.TabIndex = 38;
             this.button5.Text = "Natrag";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // gumbObrisiLiniju
+            // gumbObrisiVozniRed
             // 
-            this.gumbObrisiLiniju.BackColor = System.Drawing.Color.Black;
-            this.gumbObrisiLiniju.ForeColor = System.Drawing.Color.Transparent;
-            this.gumbObrisiLiniju.Location = new System.Drawing.Point(309, 378);
-            this.gumbObrisiLiniju.Margin = new System.Windows.Forms.Padding(15);
-            this.gumbObrisiLiniju.Name = "gumbObrisiLiniju";
-            this.gumbObrisiLiniju.Size = new System.Drawing.Size(110, 51);
-            this.gumbObrisiLiniju.TabIndex = 29;
-            this.gumbObrisiLiniju.Text = "Obriši";
-            this.gumbObrisiLiniju.UseVisualStyleBackColor = false;
+            this.gumbObrisiVozniRed.BackColor = System.Drawing.Color.Black;
+            this.gumbObrisiVozniRed.ForeColor = System.Drawing.Color.Transparent;
+            this.gumbObrisiVozniRed.Location = new System.Drawing.Point(309, 378);
+            this.gumbObrisiVozniRed.Margin = new System.Windows.Forms.Padding(15);
+            this.gumbObrisiVozniRed.Name = "gumbObrisiVozniRed";
+            this.gumbObrisiVozniRed.Size = new System.Drawing.Size(110, 51);
+            this.gumbObrisiVozniRed.TabIndex = 37;
+            this.gumbObrisiVozniRed.Text = "Obriši";
+            this.gumbObrisiVozniRed.UseVisualStyleBackColor = false;
             // 
-            // gumbAzurirajLiniju
+            // gumbAzurirajVozniRed
             // 
-            this.gumbAzurirajLiniju.BackColor = System.Drawing.Color.Black;
-            this.gumbAzurirajLiniju.ForeColor = System.Drawing.Color.Transparent;
-            this.gumbAzurirajLiniju.Location = new System.Drawing.Point(169, 378);
-            this.gumbAzurirajLiniju.Margin = new System.Windows.Forms.Padding(15);
-            this.gumbAzurirajLiniju.Name = "gumbAzurirajLiniju";
-            this.gumbAzurirajLiniju.Size = new System.Drawing.Size(110, 51);
-            this.gumbAzurirajLiniju.TabIndex = 28;
-            this.gumbAzurirajLiniju.Text = "Ažuriraj";
-            this.gumbAzurirajLiniju.UseVisualStyleBackColor = false;
+            this.gumbAzurirajVozniRed.BackColor = System.Drawing.Color.Black;
+            this.gumbAzurirajVozniRed.ForeColor = System.Drawing.Color.Transparent;
+            this.gumbAzurirajVozniRed.Location = new System.Drawing.Point(169, 378);
+            this.gumbAzurirajVozniRed.Margin = new System.Windows.Forms.Padding(15);
+            this.gumbAzurirajVozniRed.Name = "gumbAzurirajVozniRed";
+            this.gumbAzurirajVozniRed.Size = new System.Drawing.Size(110, 51);
+            this.gumbAzurirajVozniRed.TabIndex = 36;
+            this.gumbAzurirajVozniRed.Text = "Ažuriraj";
+            this.gumbAzurirajVozniRed.UseVisualStyleBackColor = false;
             // 
-            // gumbDodajLiniju
+            // gumbDodajVozniRed
             // 
-            this.gumbDodajLiniju.BackColor = System.Drawing.Color.Black;
-            this.gumbDodajLiniju.ForeColor = System.Drawing.Color.Transparent;
-            this.gumbDodajLiniju.Location = new System.Drawing.Point(29, 378);
-            this.gumbDodajLiniju.Margin = new System.Windows.Forms.Padding(15);
-            this.gumbDodajLiniju.Name = "gumbDodajLiniju";
-            this.gumbDodajLiniju.Size = new System.Drawing.Size(110, 51);
-            this.gumbDodajLiniju.TabIndex = 27;
-            this.gumbDodajLiniju.Text = "Dodaj";
-            this.gumbDodajLiniju.UseVisualStyleBackColor = false;
+            this.gumbDodajVozniRed.BackColor = System.Drawing.Color.Black;
+            this.gumbDodajVozniRed.ForeColor = System.Drawing.Color.Transparent;
+            this.gumbDodajVozniRed.Location = new System.Drawing.Point(29, 378);
+            this.gumbDodajVozniRed.Margin = new System.Windows.Forms.Padding(15);
+            this.gumbDodajVozniRed.Name = "gumbDodajVozniRed";
+            this.gumbDodajVozniRed.Size = new System.Drawing.Size(110, 51);
+            this.gumbDodajVozniRed.TabIndex = 35;
+            this.gumbDodajVozniRed.Text = "Dodaj";
+            this.gumbDodajVozniRed.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -97,15 +97,15 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(724, 220);
-            this.dataGridView1.TabIndex = 26;
+            this.dataGridView1.TabIndex = 34;
             // 
-            // txtPretrazivanjeLinije
+            // txtPretrazivanjeVoznogReda
             // 
-            this.txtPretrazivanjeLinije.Location = new System.Drawing.Point(557, 61);
-            this.txtPretrazivanjeLinije.Margin = new System.Windows.Forms.Padding(20);
-            this.txtPretrazivanjeLinije.Name = "txtPretrazivanjeLinije";
-            this.txtPretrazivanjeLinije.Size = new System.Drawing.Size(196, 22);
-            this.txtPretrazivanjeLinije.TabIndex = 25;
+            this.txtPretrazivanjeVoznogReda.Location = new System.Drawing.Point(557, 61);
+            this.txtPretrazivanjeVoznogReda.Margin = new System.Windows.Forms.Padding(20);
+            this.txtPretrazivanjeVoznogReda.Name = "txtPretrazivanjeVoznogReda";
+            this.txtPretrazivanjeVoznogReda.Size = new System.Drawing.Size(196, 22);
+            this.txtPretrazivanjeVoznogReda.TabIndex = 33;
             // 
             // label2
             // 
@@ -115,7 +115,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 20);
-            this.label2.TabIndex = 24;
+            this.label2.TabIndex = 32;
             this.label2.Text = "Pretraživanje:";
             // 
             // label1
@@ -127,26 +127,26 @@
             this.label1.Location = new System.Drawing.Point(29, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 54);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Popis linija";
+            this.label1.Size = new System.Drawing.Size(410, 54);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Popis voznog reda";
             // 
-            // FormaZaLiniju
+            // FormaZaVozniRed
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(782, 453);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.gumbObrisiLiniju);
-            this.Controls.Add(this.gumbAzurirajLiniju);
-            this.Controls.Add(this.gumbDodajLiniju);
+            this.Controls.Add(this.gumbObrisiVozniRed);
+            this.Controls.Add(this.gumbAzurirajVozniRed);
+            this.Controls.Add(this.gumbDodajVozniRed);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.txtPretrazivanjeLinije);
+            this.Controls.Add(this.txtPretrazivanjeVoznogReda);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FormaZaLiniju";
-            this.Text = "FormaZaLiniju";
+            this.Name = "FormaZaVozniRed";
+            this.Text = "FormaZaVozniRed";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,11 +156,11 @@
         #endregion
 
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button gumbObrisiLiniju;
-        private System.Windows.Forms.Button gumbAzurirajLiniju;
-        private System.Windows.Forms.Button gumbDodajLiniju;
+        private System.Windows.Forms.Button gumbObrisiVozniRed;
+        private System.Windows.Forms.Button gumbAzurirajVozniRed;
+        private System.Windows.Forms.Button gumbDodajVozniRed;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox txtPretrazivanjeLinije;
+        private System.Windows.Forms.TextBox txtPretrazivanjeVoznogReda;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }

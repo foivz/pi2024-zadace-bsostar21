@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.button5 = new System.Windows.Forms.Button();
-            this.btnObrisiStanicu = new System.Windows.Forms.Button();
-            this.btnAzurirajStanicu = new System.Windows.Forms.Button();
+            this.gumbObrisiStanicu = new System.Windows.Forms.Button();
+            this.gumbAzurirajStanicu = new System.Windows.Forms.Button();
             this.gumbDodajStanicu = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtPretrazivanjeVozila = new System.Windows.Forms.TextBox();
+            this.txtPretrazivanjeStanice = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -52,29 +52,29 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // btnObrisiStanicu
+            // gumbObrisiStanicu
             // 
-            this.btnObrisiStanicu.BackColor = System.Drawing.Color.Black;
-            this.btnObrisiStanicu.ForeColor = System.Drawing.Color.Transparent;
-            this.btnObrisiStanicu.Location = new System.Drawing.Point(309, 378);
-            this.btnObrisiStanicu.Margin = new System.Windows.Forms.Padding(15);
-            this.btnObrisiStanicu.Name = "btnObrisiStanicu";
-            this.btnObrisiStanicu.Size = new System.Drawing.Size(110, 51);
-            this.btnObrisiStanicu.TabIndex = 21;
-            this.btnObrisiStanicu.Text = "Obriši";
-            this.btnObrisiStanicu.UseVisualStyleBackColor = false;
+            this.gumbObrisiStanicu.BackColor = System.Drawing.Color.Black;
+            this.gumbObrisiStanicu.ForeColor = System.Drawing.Color.Transparent;
+            this.gumbObrisiStanicu.Location = new System.Drawing.Point(309, 378);
+            this.gumbObrisiStanicu.Margin = new System.Windows.Forms.Padding(15);
+            this.gumbObrisiStanicu.Name = "gumbObrisiStanicu";
+            this.gumbObrisiStanicu.Size = new System.Drawing.Size(110, 51);
+            this.gumbObrisiStanicu.TabIndex = 21;
+            this.gumbObrisiStanicu.Text = "Obriši";
+            this.gumbObrisiStanicu.UseVisualStyleBackColor = false;
             // 
-            // btnAzurirajStanicu
+            // gumbAzurirajStanicu
             // 
-            this.btnAzurirajStanicu.BackColor = System.Drawing.Color.Black;
-            this.btnAzurirajStanicu.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAzurirajStanicu.Location = new System.Drawing.Point(169, 378);
-            this.btnAzurirajStanicu.Margin = new System.Windows.Forms.Padding(15);
-            this.btnAzurirajStanicu.Name = "btnAzurirajStanicu";
-            this.btnAzurirajStanicu.Size = new System.Drawing.Size(110, 51);
-            this.btnAzurirajStanicu.TabIndex = 20;
-            this.btnAzurirajStanicu.Text = "Ažuriraj";
-            this.btnAzurirajStanicu.UseVisualStyleBackColor = false;
+            this.gumbAzurirajStanicu.BackColor = System.Drawing.Color.Black;
+            this.gumbAzurirajStanicu.ForeColor = System.Drawing.Color.Transparent;
+            this.gumbAzurirajStanicu.Location = new System.Drawing.Point(169, 378);
+            this.gumbAzurirajStanicu.Margin = new System.Windows.Forms.Padding(15);
+            this.gumbAzurirajStanicu.Name = "gumbAzurirajStanicu";
+            this.gumbAzurirajStanicu.Size = new System.Drawing.Size(110, 51);
+            this.gumbAzurirajStanicu.TabIndex = 20;
+            this.gumbAzurirajStanicu.Text = "Ažuriraj";
+            this.gumbAzurirajStanicu.UseVisualStyleBackColor = false;
             // 
             // gumbDodajStanicu
             // 
@@ -99,13 +99,13 @@
             this.dataGridView1.Size = new System.Drawing.Size(724, 220);
             this.dataGridView1.TabIndex = 18;
             // 
-            // txtPretrazivanjeVozila
+            // txtPretrazivanjeStanice
             // 
-            this.txtPretrazivanjeVozila.Location = new System.Drawing.Point(557, 61);
-            this.txtPretrazivanjeVozila.Margin = new System.Windows.Forms.Padding(20);
-            this.txtPretrazivanjeVozila.Name = "txtPretrazivanjeVozila";
-            this.txtPretrazivanjeVozila.Size = new System.Drawing.Size(196, 22);
-            this.txtPretrazivanjeVozila.TabIndex = 17;
+            this.txtPretrazivanjeStanice.Location = new System.Drawing.Point(557, 61);
+            this.txtPretrazivanjeStanice.Margin = new System.Windows.Forms.Padding(20);
+            this.txtPretrazivanjeStanice.Name = "txtPretrazivanjeStanice";
+            this.txtPretrazivanjeStanice.Size = new System.Drawing.Size(196, 22);
+            this.txtPretrazivanjeStanice.TabIndex = 17;
             // 
             // label2
             // 
@@ -138,11 +138,11 @@
             this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(782, 453);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.btnObrisiStanicu);
-            this.Controls.Add(this.btnAzurirajStanicu);
+            this.Controls.Add(this.gumbObrisiStanicu);
+            this.Controls.Add(this.gumbAzurirajStanicu);
             this.Controls.Add(this.gumbDodajStanicu);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.txtPretrazivanjeVozila);
+            this.Controls.Add(this.txtPretrazivanjeStanice);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormaZaStanicu";
@@ -156,11 +156,11 @@
         #endregion
 
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button btnObrisiStanicu;
-        private System.Windows.Forms.Button btnAzurirajStanicu;
+        private System.Windows.Forms.Button gumbObrisiStanicu;
+        private System.Windows.Forms.Button gumbAzurirajStanicu;
         private System.Windows.Forms.Button gumbDodajStanicu;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox txtPretrazivanjeVozila;
+        private System.Windows.Forms.TextBox txtPretrazivanjeStanice;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }

@@ -82,6 +82,12 @@
     <Compile Include="FormaZaVozila.Designer.cs">
       <DependentUpon>FormaZaVozila.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaZaVozniRed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZaVozniRed.Designer.cs">
+      <DependentUpon>FormaZaVozniRed.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormaZaZaposlenike.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormaZaVozila.resx">
       <DependentUpon>FormaZaVozila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaZaVozniRed.resx">
+      <DependentUpon>FormaZaVozniRed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaZaZaposlenike.resx">
       <DependentUpon>FormaZaZaposlenike.cs</DependentUpon>
