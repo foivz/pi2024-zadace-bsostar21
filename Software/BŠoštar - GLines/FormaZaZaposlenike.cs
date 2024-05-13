@@ -30,7 +30,8 @@ namespace BŠoštar___GLines
 
         private void gumbStanica_Click(object sender, EventArgs e)
         {
-
+            FormaZaStanicu formaZaStanicu = new FormaZaStanicu();   
+            formaZaStanicu.ShowDialog();    
         }
 
         private void gumbLinija_Click(object sender, EventArgs e)
