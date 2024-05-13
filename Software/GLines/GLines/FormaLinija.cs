@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GLines
 {
-    public partial class FormaStanica : Form
+    public partial class FormaLinija : Form
     {
-        public FormaStanica()
+        public FormaLinija()
         {
             InitializeComponent();
         }

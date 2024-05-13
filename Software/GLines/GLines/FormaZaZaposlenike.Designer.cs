@@ -98,6 +98,7 @@
             this.gumbLinija.TabIndex = 8;
             this.gumbLinija.Text = "Linija";
             this.gumbLinija.UseVisualStyleBackColor = false;
+            this.gumbLinija.Click += new System.EventHandler(this.gumbLinija_Click);
             // 
             // gumbStanica
             // 

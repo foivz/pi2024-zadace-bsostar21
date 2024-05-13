@@ -31,7 +31,14 @@ namespace GLines
 
         private void gumbStanica_Click(object sender, EventArgs e)
         {
+            FormaStanica formStanica = new FormaStanica();
+            formStanica.ShowDialog();
+        }
 
+        private void gumbLinija_Click(object sender, EventArgs e)
+        {
+            FormaLinija formLinija = new FormaLinija();
+            formLinija.ShowDialog();
         }
     }
 }

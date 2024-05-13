@@ -52,6 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaLinija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaLinija.Designer.cs">
+      <DependentUpon>FormaLinija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaStanica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaStanica.Designer.cs">
+      <DependentUpon>FormaStanica.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormaVozila.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +92,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaLinija.resx">
+      <DependentUpon>FormaLinija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaStanica.resx">
+      <DependentUpon>FormaStanica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaVozila.resx">
       <DependentUpon>FormaVozila.cs</DependentUpon>
