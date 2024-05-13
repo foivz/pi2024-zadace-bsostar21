@@ -38,6 +38,11 @@ namespace BŠoštar___GLines
                 {
                     MessageBox.Show("Uspješna prijava", "Dobrodošli",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    FormaZaZaposlenike formaZaZaposlenike = new FormaZaZaposlenike();
+                    Hide();
+                    formaZaZaposlenike.ShowDialog();
+                    Close();
                 }
                 else
                 {
