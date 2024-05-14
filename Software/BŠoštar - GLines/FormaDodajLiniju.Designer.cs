@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.gumbDodajLiniju = new System.Windows.Forms.Button();
-            this.textVrijemePutovanja = new System.Windows.Forms.TextBox();
+            this.txtVrijemePutovanja = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textOdredisnaStanica = new System.Windows.Forms.TextBox();
+            this.txtOdredisnaStanica = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.gumbOdustani = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,12 +52,12 @@
             this.gumbDodajLiniju.Text = "Dodaj";
             this.gumbDodajLiniju.UseVisualStyleBackColor = false;
             // 
-            // textVrijemePutovanja
+            // txtVrijemePutovanja
             // 
-            this.textVrijemePutovanja.Location = new System.Drawing.Point(28, 296);
-            this.textVrijemePutovanja.Name = "textVrijemePutovanja";
-            this.textVrijemePutovanja.Size = new System.Drawing.Size(224, 22);
-            this.textVrijemePutovanja.TabIndex = 32;
+            this.txtVrijemePutovanja.Location = new System.Drawing.Point(28, 296);
+            this.txtVrijemePutovanja.Name = "txtVrijemePutovanja";
+            this.txtVrijemePutovanja.Size = new System.Drawing.Size(224, 22);
+            this.txtVrijemePutovanja.TabIndex = 32;
             // 
             // label4
             // 
@@ -70,12 +70,12 @@
             this.label4.TabIndex = 31;
             this.label4.Text = "Vrijeme putovanja:";
             // 
-            // textOdredisnaStanica
+            // txtOdredisnaStanica
             // 
-            this.textOdredisnaStanica.Location = new System.Drawing.Point(28, 218);
-            this.textOdredisnaStanica.Name = "textOdredisnaStanica";
-            this.textOdredisnaStanica.Size = new System.Drawing.Size(224, 22);
-            this.textOdredisnaStanica.TabIndex = 30;
+            this.txtOdredisnaStanica.Location = new System.Drawing.Point(28, 218);
+            this.txtOdredisnaStanica.Name = "txtOdredisnaStanica";
+            this.txtOdredisnaStanica.Size = new System.Drawing.Size(224, 22);
+            this.txtOdredisnaStanica.TabIndex = 30;
             // 
             // label3
             // 
@@ -144,9 +144,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(632, 353);
             this.Controls.Add(this.gumbDodajLiniju);
-            this.Controls.Add(this.textVrijemePutovanja);
+            this.Controls.Add(this.txtVrijemePutovanja);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textOdredisnaStanica);
+            this.Controls.Add(this.txtOdredisnaStanica);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.gumbOdustani);
             this.Controls.Add(this.label2);
@@ -163,9 +163,9 @@
         #endregion
 
         private System.Windows.Forms.Button gumbDodajLiniju;
-        private System.Windows.Forms.TextBox textVrijemePutovanja;
+        private System.Windows.Forms.TextBox txtVrijemePutovanja;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textOdredisnaStanica;
+        private System.Windows.Forms.TextBox txtOdredisnaStanica;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button gumbOdustani;
         private System.Windows.Forms.Label label2;

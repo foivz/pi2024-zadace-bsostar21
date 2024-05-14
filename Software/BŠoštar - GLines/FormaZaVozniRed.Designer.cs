@@ -87,6 +87,7 @@
             this.gumbDodajVozniRed.TabIndex = 35;
             this.gumbDodajVozniRed.Text = "Dodaj";
             this.gumbDodajVozniRed.UseVisualStyleBackColor = false;
+            this.gumbDodajVozniRed.Click += new System.EventHandler(this.gumbDodajVozniRed_Click);
             // 
             // dataGridView1
             // 

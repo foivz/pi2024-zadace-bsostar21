@@ -88,6 +88,12 @@
     <Compile Include="FormaDodajVozilo.Designer.cs">
       <DependentUpon>FormaDodajVozilo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaDodajVozniRed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaDodajVozniRed.Designer.cs">
+      <DependentUpon>FormaDodajVozniRed.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormaZaLiniju.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormaDodajVozilo.resx">
       <DependentUpon>FormaDodajVozilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaDodajVozniRed.resx">
+      <DependentUpon>FormaDodajVozniRed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaZaLiniju.resx">
       <DependentUpon>FormaZaLiniju.cs</DependentUpon>

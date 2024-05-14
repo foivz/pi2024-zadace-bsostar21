@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace BŠoštar___GLines
 {
-    public partial class FormaZaVozniRed : Form
+    public partial class FormaDodajVozniRed : Form
     {
-        public FormaZaVozniRed()
+        public FormaDodajVozniRed()
         {
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void gumbOdustani_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void gumbDodajVozniRed_Click(object sender, EventArgs e)
-        {
-            FormaDodajVozniRed formaDodajVozniRed = new FormaDodajVozniRed();
-            formaDodajVozniRed.ShowDialog();
         }
     }
 }
