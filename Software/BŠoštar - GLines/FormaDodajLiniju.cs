@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace BŠoštar___GLines
 {
-    public partial class FormaZaLiniju : Form
+    public partial class FormaDodajLiniju : Form
     {
-        public FormaZaLiniju()
+        public FormaDodajLiniju()
         {
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void gumbOdustani_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void gumbDodajLiniju_Click(object sender, EventArgs e)
-        {
-            FormaDodajLiniju formaDodajLiniju = new FormaDodajLiniju();
-            formaDodajLiniju.ShowDialog();
         }
     }
 }
