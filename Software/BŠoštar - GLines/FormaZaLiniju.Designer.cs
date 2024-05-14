@@ -75,6 +75,7 @@
             this.gumbAzurirajLiniju.TabIndex = 28;
             this.gumbAzurirajLiniju.Text = "Ažuriraj";
             this.gumbAzurirajLiniju.UseVisualStyleBackColor = false;
+            this.gumbAzurirajLiniju.Click += new System.EventHandler(this.gumbAzurirajLiniju_Click);
             // 
             // gumbDodajLiniju
             // 

@@ -27,5 +27,11 @@ namespace BŠoštar___GLines
             FormaDodajLiniju formaDodajLiniju = new FormaDodajLiniju();
             formaDodajLiniju.ShowDialog();
         }
+
+        private void gumbAzurirajLiniju_Click(object sender, EventArgs e)
+        {
+            FormaAzurirajLiniju formaAzurirajLiniju = new FormaAzurirajLiniju();
+            formaAzurirajLiniju.ShowDialog();
+        }
     }
 }
