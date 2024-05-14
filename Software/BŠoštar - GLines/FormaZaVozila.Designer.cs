@@ -106,6 +106,7 @@
             this.gumbAzurirajVozilo.TabIndex = 11;
             this.gumbAzurirajVozilo.Text = "Ažuriraj";
             this.gumbAzurirajVozilo.UseVisualStyleBackColor = false;
+            this.gumbAzurirajVozilo.Click += new System.EventHandler(this.gumbAzurirajVozilo_Click);
             // 
             // gumbObrisiVozilo
             // 

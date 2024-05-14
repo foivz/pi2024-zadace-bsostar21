@@ -27,5 +27,10 @@ namespace BŠoštar___GLines
             FormaDodajVozilo formaDodajVozilo = new FormaDodajVozilo();
             formaDodajVozilo.ShowDialog();
         }
+
+        private void gumbAzurirajVozilo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
