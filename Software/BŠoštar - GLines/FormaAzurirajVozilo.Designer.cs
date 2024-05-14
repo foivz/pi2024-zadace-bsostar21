@@ -181,6 +181,7 @@
             this.gumbOdustani.TabIndex = 28;
             this.gumbOdustani.Text = "Odustani";
             this.gumbOdustani.UseVisualStyleBackColor = false;
+            this.gumbOdustani.Click += new System.EventHandler(this.gumbOdustani_Click);
             // 
             // label2
             // 

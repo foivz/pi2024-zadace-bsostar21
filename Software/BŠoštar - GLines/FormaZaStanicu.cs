@@ -21,5 +21,11 @@ namespace BŠoštar___GLines
         {
             this.Close();
         }
+
+        private void gumbDodajStanicu_Click(object sender, EventArgs e)
+        {
+            FormaDodajStanicu formaDodajStanicu = new FormaDodajStanicu();
+            formaDodajStanicu.ShowDialog();
+        }
     }
 }

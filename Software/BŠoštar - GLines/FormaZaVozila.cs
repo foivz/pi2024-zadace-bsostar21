@@ -30,7 +30,8 @@ namespace BŠoštar___GLines
 
         private void gumbAzurirajVozilo_Click(object sender, EventArgs e)
         {
-
+            FormaAzurirajVozilo formaAzurirajVozilo = new FormaAzurirajVozilo();
+            formaAzurirajVozilo.ShowDialog();
         }
     }
 }

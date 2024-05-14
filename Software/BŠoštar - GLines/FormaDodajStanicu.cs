@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BŠoštar___GLines
 {
-    public partial class FormaAzurirajVozilo : Form
+    public partial class FormaDodajStanicu : Form
     {
-        public FormaAzurirajVozilo()
+        public FormaDodajStanicu()
         {
             InitializeComponent();
         }

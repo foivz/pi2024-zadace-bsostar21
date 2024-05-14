@@ -87,6 +87,7 @@
             this.gumbDodajStanicu.TabIndex = 19;
             this.gumbDodajStanicu.Text = "Dodaj";
             this.gumbDodajStanicu.UseVisualStyleBackColor = false;
+            this.gumbDodajStanicu.Click += new System.EventHandler(this.gumbDodajStanicu_Click);
             // 
             // dataGridView1
             // 
