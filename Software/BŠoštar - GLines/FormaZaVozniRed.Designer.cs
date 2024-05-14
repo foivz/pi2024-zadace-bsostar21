@@ -75,6 +75,7 @@
             this.gumbAzurirajVozniRed.TabIndex = 36;
             this.gumbAzurirajVozniRed.Text = "Ažuriraj";
             this.gumbAzurirajVozniRed.UseVisualStyleBackColor = false;
+            this.gumbAzurirajVozniRed.Click += new System.EventHandler(this.gumbAzurirajVozniRed_Click);
             // 
             // gumbDodajVozniRed
             // 

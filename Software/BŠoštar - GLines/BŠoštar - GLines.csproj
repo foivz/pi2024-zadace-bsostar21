@@ -70,6 +70,12 @@
     <Compile Include="FormaAzurirajVozilo.Designer.cs">
       <DependentUpon>FormaAzurirajVozilo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaAzurirajVozniRed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaAzurirajVozniRed.Designer.cs">
+      <DependentUpon>FormaAzurirajVozniRed.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormaDodajLiniju.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormaAzurirajVozilo.resx">
       <DependentUpon>FormaAzurirajVozilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaAzurirajVozniRed.resx">
+      <DependentUpon>FormaAzurirajVozniRed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaDodajLiniju.resx">
       <DependentUpon>FormaDodajLiniju.cs</DependentUpon>

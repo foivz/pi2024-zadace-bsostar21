@@ -27,5 +27,11 @@ namespace BŠoštar___GLines
             FormaDodajVozniRed formaDodajVozniRed = new FormaDodajVozniRed();
             formaDodajVozniRed.ShowDialog();
         }
+
+        private void gumbAzurirajVozniRed_Click(object sender, EventArgs e)
+        {
+            FormaAzurirajVozniRed formaAzurirajVozniRed = new FormaAzurirajVozniRed();
+            formaAzurirajVozniRed.ShowDialog();
+        }
     }
 }
