@@ -40,10 +40,10 @@
             this.label1.BackColor = System.Drawing.Color.DarkBlue;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(294, 29);
-            this.label1.Margin = new System.Windows.Forms.Padding(285, 20, 285, 200);
+            this.label1.Location = new System.Drawing.Point(220, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(214, 16, 214, 162);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 54);
+            this.label1.Size = new System.Drawing.Size(157, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "GLINES";
             // 
@@ -51,10 +51,10 @@
             // 
             this.gumbZaposlenici.BackColor = System.Drawing.Color.Black;
             this.gumbZaposlenici.ForeColor = System.Drawing.Color.Transparent;
-            this.gumbZaposlenici.Location = new System.Drawing.Point(209, 176);
-            this.gumbZaposlenici.Margin = new System.Windows.Forms.Padding(200);
+            this.gumbZaposlenici.Location = new System.Drawing.Point(157, 143);
+            this.gumbZaposlenici.Margin = new System.Windows.Forms.Padding(150, 162, 150, 162);
             this.gumbZaposlenici.Name = "gumbZaposlenici";
-            this.gumbZaposlenici.Size = new System.Drawing.Size(110, 51);
+            this.gumbZaposlenici.Size = new System.Drawing.Size(82, 41);
             this.gumbZaposlenici.TabIndex = 1;
             this.gumbZaposlenici.Text = "Zaposlenici";
             this.gumbZaposlenici.UseVisualStyleBackColor = false;
@@ -64,10 +64,10 @@
             // 
             this.gumbPutnici.BackColor = System.Drawing.Color.Black;
             this.gumbPutnici.ForeColor = System.Drawing.Color.Transparent;
-            this.gumbPutnici.Location = new System.Drawing.Point(463, 176);
-            this.gumbPutnici.Margin = new System.Windows.Forms.Padding(200);
+            this.gumbPutnici.Location = new System.Drawing.Point(347, 143);
+            this.gumbPutnici.Margin = new System.Windows.Forms.Padding(150, 162, 150, 162);
             this.gumbPutnici.Name = "gumbPutnici";
-            this.gumbPutnici.Size = new System.Drawing.Size(110, 51);
+            this.gumbPutnici.Size = new System.Drawing.Size(82, 41);
             this.gumbPutnici.TabIndex = 2;
             this.gumbPutnici.Text = "Putnici";
             this.gumbPutnici.UseVisualStyleBackColor = false;
@@ -77,10 +77,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(336, 300);
-            this.button1.Margin = new System.Windows.Forms.Padding(200);
+            this.button1.Location = new System.Drawing.Point(252, 244);
+            this.button1.Margin = new System.Windows.Forms.Padding(150, 162, 150, 162);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 51);
+            this.button1.Size = new System.Drawing.Size(82, 41);
             this.button1.TabIndex = 3;
             this.button1.Text = "Isključi";
             this.button1.UseVisualStyleBackColor = false;
@@ -88,17 +88,19 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
-            this.ClientSize = new System.Drawing.Size(782, 382);
+            this.ClientSize = new System.Drawing.Size(586, 310);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.gumbPutnici);
             this.Controls.Add(this.gumbZaposlenici);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.Black;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DBLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,6 +34,11 @@ namespace BŠoštar___GLines
             FormaZaPrijavu formaZaPrijavu = new FormaZaPrijavu();
             formaZaPrijavu.ShowDialog();
             
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            DB.SetConfiguration("PI2324_bsostar21_DB", "PI2324_bsostar21_User", "3DeGe:j]");
         }
     }
 }
