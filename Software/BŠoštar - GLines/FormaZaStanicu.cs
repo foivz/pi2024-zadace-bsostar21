@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BŠoštar___GLines.Repozitoriji;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +33,23 @@ namespace BŠoštar___GLines
         {
             FormaAzurirajStanicu formaAzurirajStanicu = new FormaAzurirajStanicu();
             formaAzurirajStanicu.ShowDialog();
+        }
+
+        private void FormaZaStanicu_Load(object sender, EventArgs e)
+        {
+            ShowStanice();
+        }
+
+        private void ShowStanice()
+        {
+            var stanice = StanicaRepozitorij.GetStanice();
+            dgvStanice.DataSource = stanice;
+
+            dgvStanice.Columns["IdStanica"].DisplayIndex = 0;
+            dgvStanice.Columns["nazivStanica"].DisplayIndex = 1;
+            dgvStanice.Columns["adresaStanica"].DisplayIndex = 2;
+    
+
         }
     }
 }

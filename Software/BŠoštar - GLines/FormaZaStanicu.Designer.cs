@@ -32,11 +32,11 @@
             this.gumbObrisiStanicu = new System.Windows.Forms.Button();
             this.gumbAzurirajStanicu = new System.Windows.Forms.Button();
             this.gumbDodajStanicu = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvStanice = new System.Windows.Forms.DataGridView();
             this.txtPretrazivanjeStanice = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStanice)).BeginInit();
             this.SuspendLayout();
             // 
             // button5
@@ -90,16 +90,16 @@
             this.gumbDodajStanicu.UseVisualStyleBackColor = false;
             this.gumbDodajStanicu.Click += new System.EventHandler(this.gumbDodajStanicu_Click);
             // 
-            // dataGridView1
+            // dgvStanice
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 123);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(20);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(724, 220);
-            this.dataGridView1.TabIndex = 18;
+            this.dgvStanice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStanice.Location = new System.Drawing.Point(29, 123);
+            this.dgvStanice.Margin = new System.Windows.Forms.Padding(20);
+            this.dgvStanice.Name = "dgvStanice";
+            this.dgvStanice.RowHeadersWidth = 51;
+            this.dgvStanice.RowTemplate.Height = 24;
+            this.dgvStanice.Size = new System.Drawing.Size(724, 220);
+            this.dgvStanice.TabIndex = 18;
             // 
             // txtPretrazivanjeStanice
             // 
@@ -143,13 +143,14 @@
             this.Controls.Add(this.gumbObrisiStanicu);
             this.Controls.Add(this.gumbAzurirajStanicu);
             this.Controls.Add(this.gumbDodajStanicu);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvStanice);
             this.Controls.Add(this.txtPretrazivanjeStanice);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormaZaStanicu";
             this.Text = "FormaZaStanicu";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormaZaStanicu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStanice)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,7 +162,7 @@
         private System.Windows.Forms.Button gumbObrisiStanicu;
         private System.Windows.Forms.Button gumbAzurirajStanicu;
         private System.Windows.Forms.Button gumbDodajStanicu;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvStanice;
         private System.Windows.Forms.TextBox txtPretrazivanjeStanice;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
