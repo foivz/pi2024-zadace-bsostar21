@@ -31,13 +31,13 @@
             this.gumbAzurirajLiniju = new System.Windows.Forms.Button();
             this.textVrijemePutovanja = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textOdredisnaStanica = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.gumbOdustani = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPolazisnaStanica = new System.Windows.Forms.TextBox();
             this.txtNazivLinija = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbPolazisnaStanica = new System.Windows.Forms.ComboBox();
+            this.cbOdredisnaStanica = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // gumbAzurirajLiniju
@@ -51,6 +51,7 @@
             this.gumbAzurirajLiniju.TabIndex = 51;
             this.gumbAzurirajLiniju.Text = "Ažuriraj";
             this.gumbAzurirajLiniju.UseVisualStyleBackColor = false;
+            this.gumbAzurirajLiniju.Click += new System.EventHandler(this.gumbAzurirajLiniju_Click);
             // 
             // textVrijemePutovanja
             // 
@@ -69,13 +70,6 @@
             this.label4.Size = new System.Drawing.Size(147, 20);
             this.label4.TabIndex = 49;
             this.label4.Text = "Vrijeme putovanja:";
-            // 
-            // textOdredisnaStanica
-            // 
-            this.textOdredisnaStanica.Location = new System.Drawing.Point(28, 218);
-            this.textOdredisnaStanica.Name = "textOdredisnaStanica";
-            this.textOdredisnaStanica.Size = new System.Drawing.Size(224, 22);
-            this.textOdredisnaStanica.TabIndex = 48;
             // 
             // label3
             // 
@@ -112,13 +106,6 @@
             this.label2.TabIndex = 45;
             this.label2.Text = "Polazišna stanica:";
             // 
-            // txtPolazisnaStanica
-            // 
-            this.txtPolazisnaStanica.Location = new System.Drawing.Point(28, 140);
-            this.txtPolazisnaStanica.Name = "txtPolazisnaStanica";
-            this.txtPolazisnaStanica.Size = new System.Drawing.Size(224, 22);
-            this.txtPolazisnaStanica.TabIndex = 44;
-            // 
             // txtNazivLinija
             // 
             this.txtNazivLinija.Location = new System.Drawing.Point(28, 62);
@@ -137,24 +124,43 @@
             this.label1.TabIndex = 42;
             this.label1.Text = "Naziv: ";
             // 
+            // cbPolazisnaStanica
+            // 
+            this.cbPolazisnaStanica.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPolazisnaStanica.FormattingEnabled = true;
+            this.cbPolazisnaStanica.Location = new System.Drawing.Point(28, 138);
+            this.cbPolazisnaStanica.Name = "cbPolazisnaStanica";
+            this.cbPolazisnaStanica.Size = new System.Drawing.Size(224, 24);
+            this.cbPolazisnaStanica.TabIndex = 52;
+            // 
+            // cbOdredisnaStanica
+            // 
+            this.cbOdredisnaStanica.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOdredisnaStanica.FormattingEnabled = true;
+            this.cbOdredisnaStanica.Location = new System.Drawing.Point(28, 216);
+            this.cbOdredisnaStanica.Name = "cbOdredisnaStanica";
+            this.cbOdredisnaStanica.Size = new System.Drawing.Size(224, 24);
+            this.cbOdredisnaStanica.TabIndex = 53;
+            // 
             // FormaAzurirajLiniju
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(632, 353);
+            this.Controls.Add(this.cbOdredisnaStanica);
+            this.Controls.Add(this.cbPolazisnaStanica);
             this.Controls.Add(this.gumbAzurirajLiniju);
             this.Controls.Add(this.textVrijemePutovanja);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textOdredisnaStanica);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.gumbOdustani);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtPolazisnaStanica);
             this.Controls.Add(this.txtNazivLinija);
             this.Controls.Add(this.label1);
             this.Name = "FormaAzurirajLiniju";
             this.Text = "FormaAzurirajLiniju";
+            this.Load += new System.EventHandler(this.FormaAzurirajLiniju_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,12 +171,12 @@
         private System.Windows.Forms.Button gumbAzurirajLiniju;
         private System.Windows.Forms.TextBox textVrijemePutovanja;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textOdredisnaStanica;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button gumbOdustani;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPolazisnaStanica;
         private System.Windows.Forms.TextBox txtNazivLinija;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbPolazisnaStanica;
+        private System.Windows.Forms.ComboBox cbOdredisnaStanica;
     }
 }

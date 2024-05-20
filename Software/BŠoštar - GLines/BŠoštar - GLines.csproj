@@ -146,9 +146,11 @@
     <Compile Include="FormaZaZaposlenike.Designer.cs">
       <DependentUpon>FormaZaZaposlenike.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Linija.cs" />
     <Compile Include="Models\Stanica.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repozitoriji\LinijaRepozitorij.cs" />
     <Compile Include="Repozitoriji\StanicaRepozitorij.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

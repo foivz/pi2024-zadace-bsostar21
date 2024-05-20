@@ -51,6 +51,10 @@ namespace BŠoštar___GLines
             dgvStanice.Columns["nazivStanice"].DisplayIndex = 1;
             dgvStanice.Columns["adresaStanice"].DisplayIndex = 2;
 
+            dgvStanice.Columns["IdStanica"].HeaderText = "ID Stanice";
+            dgvStanice.Columns["nazivStanice"].HeaderText = "Naziv stanice";
+            dgvStanice.Columns["adresaStanice"].HeaderText = "Adresa stanice";
+
 
         }
 
