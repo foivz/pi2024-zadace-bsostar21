@@ -9,12 +9,12 @@ namespace BŠoštar___GLines.Models
     public class Stanica
     {
         public int idStanica { get; set; }
-        public string nazivStanica { get; set; }
-        public string adresaStanica { get; set; }
+        public string nazivStanice { get; set; }
+        public string adresaStanice { get; set; }
 
         public override string ToString()
         {
-            return nazivStanica;
+            return nazivStanice;
         }
 
     }

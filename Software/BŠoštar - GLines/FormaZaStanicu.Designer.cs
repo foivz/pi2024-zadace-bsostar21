@@ -63,6 +63,7 @@
             this.gumbObrisiStanicu.TabIndex = 21;
             this.gumbObrisiStanicu.Text = "Obriši";
             this.gumbObrisiStanicu.UseVisualStyleBackColor = false;
+            this.gumbObrisiStanicu.Click += new System.EventHandler(this.gumbObrisiStanicu_Click);
             // 
             // gumbAzurirajStanicu
             // 

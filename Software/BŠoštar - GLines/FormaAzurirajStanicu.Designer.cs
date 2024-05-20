@@ -60,6 +60,7 @@
             this.gumbAzurirajStanicu.TabIndex = 30;
             this.gumbAzurirajStanicu.Text = "Ažuriraj";
             this.gumbAzurirajStanicu.UseVisualStyleBackColor = false;
+            this.gumbAzurirajStanicu.Click += new System.EventHandler(this.gumbAzurirajStanicu_Click);
             // 
             // label2
             // 
@@ -111,6 +112,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormaAzurirajStanicu";
             this.Text = "FormaAzurirajStanicu";
+            this.Load += new System.EventHandler(this.FormaAzurirajStanicu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

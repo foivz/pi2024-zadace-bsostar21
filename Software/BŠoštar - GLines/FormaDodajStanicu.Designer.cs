@@ -83,6 +83,7 @@
             this.gumbDodajStanicu.TabIndex = 24;
             this.gumbDodajStanicu.Text = "Dodaj";
             this.gumbDodajStanicu.UseVisualStyleBackColor = false;
+            this.gumbDodajStanicu.Click += new System.EventHandler(this.gumbDodajStanicu_Click);
             // 
             // gumbOdustani
             // 

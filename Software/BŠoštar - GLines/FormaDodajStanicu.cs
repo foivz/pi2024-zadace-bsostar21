@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BŠoštar___GLines.Models;
+using BŠoštar___GLines.Repozitoriji;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +21,21 @@ namespace BŠoštar___GLines
 
         private void gumbOdustani_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void gumbDodajStanicu_Click(object sender, EventArgs e)
+        {
+            string naziv = txtNazivStanice.Text;
+            string adresa = txtAdresaStanice.Text;
+
+            var stanica = new Stanica
+            {
+                nazivStanice = naziv,
+                adresaStanice = adresa,
+            };
+
+            StanicaRepozitorij.Save(stanica);
             this.Close();
         }
     }
