@@ -32,11 +32,11 @@
             this.gumbObrisiVozniRed = new System.Windows.Forms.Button();
             this.gumbAzurirajVozniRed = new System.Windows.Forms.Button();
             this.gumbDodajVozniRed = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvRed = new System.Windows.Forms.DataGridView();
             this.txtPretrazivanjeVoznogReda = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRed)).BeginInit();
             this.SuspendLayout();
             // 
             // button5
@@ -63,6 +63,7 @@
             this.gumbObrisiVozniRed.TabIndex = 37;
             this.gumbObrisiVozniRed.Text = "Obriši";
             this.gumbObrisiVozniRed.UseVisualStyleBackColor = false;
+            this.gumbObrisiVozniRed.Click += new System.EventHandler(this.gumbObrisiVozniRed_Click);
             // 
             // gumbAzurirajVozniRed
             // 
@@ -90,16 +91,16 @@
             this.gumbDodajVozniRed.UseVisualStyleBackColor = false;
             this.gumbDodajVozniRed.Click += new System.EventHandler(this.gumbDodajVozniRed_Click);
             // 
-            // dataGridView1
+            // dgvRed
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 123);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(20);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(724, 220);
-            this.dataGridView1.TabIndex = 34;
+            this.dgvRed.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRed.Location = new System.Drawing.Point(29, 123);
+            this.dgvRed.Margin = new System.Windows.Forms.Padding(20);
+            this.dgvRed.Name = "dgvRed";
+            this.dgvRed.RowHeadersWidth = 51;
+            this.dgvRed.RowTemplate.Height = 24;
+            this.dgvRed.Size = new System.Drawing.Size(724, 220);
+            this.dgvRed.TabIndex = 34;
             // 
             // txtPretrazivanjeVoznogReda
             // 
@@ -143,13 +144,14 @@
             this.Controls.Add(this.gumbObrisiVozniRed);
             this.Controls.Add(this.gumbAzurirajVozniRed);
             this.Controls.Add(this.gumbDodajVozniRed);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvRed);
             this.Controls.Add(this.txtPretrazivanjeVoznogReda);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormaZaVozniRed";
             this.Text = "FormaZaVozniRed";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormaZaVozniRed_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRed)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,7 +163,7 @@
         private System.Windows.Forms.Button gumbObrisiVozniRed;
         private System.Windows.Forms.Button gumbAzurirajVozniRed;
         private System.Windows.Forms.Button gumbDodajVozniRed;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvRed;
         private System.Windows.Forms.TextBox txtPretrazivanjeVoznogReda;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

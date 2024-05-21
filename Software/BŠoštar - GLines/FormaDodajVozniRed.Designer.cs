@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.gumbDodajVozniRed = new System.Windows.Forms.Button();
-            this.txtStanicaDolaska = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtStanicaPolaska = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.gumbOdustani = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtVrijemeDolaska = new System.Windows.Forms.TextBox();
-            this.txtVrijemePolaska = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtDanUTjednu = new System.Windows.Forms.TextBox();
+            this.cbStanicaPolaska = new System.Windows.Forms.ComboBox();
+            this.cbStanicaDolaska = new System.Windows.Forms.ComboBox();
+            this.dtVrijemePolaska = new System.Windows.Forms.DateTimePicker();
+            this.dtVrijemeDolaska = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // gumbDodajVozniRed
@@ -53,13 +53,7 @@
             this.gumbDodajVozniRed.TabIndex = 51;
             this.gumbDodajVozniRed.Text = "Dodaj";
             this.gumbDodajVozniRed.UseVisualStyleBackColor = false;
-            // 
-            // txtStanicaDolaska
-            // 
-            this.txtStanicaDolaska.Location = new System.Drawing.Point(28, 296);
-            this.txtStanicaDolaska.Name = "txtStanicaDolaska";
-            this.txtStanicaDolaska.Size = new System.Drawing.Size(224, 22);
-            this.txtStanicaDolaska.TabIndex = 50;
+            this.gumbDodajVozniRed.Click += new System.EventHandler(this.gumbDodajVozniRed_Click);
             // 
             // label4
             // 
@@ -71,13 +65,6 @@
             this.label4.Size = new System.Drawing.Size(132, 20);
             this.label4.TabIndex = 49;
             this.label4.Text = "Stanica dolaska:";
-            // 
-            // txtStanicaPolaska
-            // 
-            this.txtStanicaPolaska.Location = new System.Drawing.Point(28, 218);
-            this.txtStanicaPolaska.Name = "txtStanicaPolaska";
-            this.txtStanicaPolaska.Size = new System.Drawing.Size(224, 22);
-            this.txtStanicaPolaska.TabIndex = 48;
             // 
             // label3
             // 
@@ -114,20 +101,6 @@
             this.label2.TabIndex = 45;
             this.label2.Text = "Vrijeme dolaska:";
             // 
-            // txtVrijemeDolaska
-            // 
-            this.txtVrijemeDolaska.Location = new System.Drawing.Point(28, 140);
-            this.txtVrijemeDolaska.Name = "txtVrijemeDolaska";
-            this.txtVrijemeDolaska.Size = new System.Drawing.Size(224, 22);
-            this.txtVrijemeDolaska.TabIndex = 44;
-            // 
-            // txtVrijemePolaska
-            // 
-            this.txtVrijemePolaska.Location = new System.Drawing.Point(28, 62);
-            this.txtVrijemePolaska.Name = "txtVrijemePolaska";
-            this.txtVrijemePolaska.Size = new System.Drawing.Size(224, 22);
-            this.txtVrijemePolaska.TabIndex = 43;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -157,26 +130,67 @@
             this.txtDanUTjednu.Size = new System.Drawing.Size(224, 22);
             this.txtDanUTjednu.TabIndex = 53;
             // 
+            // cbStanicaPolaska
+            // 
+            this.cbStanicaPolaska.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbStanicaPolaska.FormattingEnabled = true;
+            this.cbStanicaPolaska.Location = new System.Drawing.Point(28, 218);
+            this.cbStanicaPolaska.Name = "cbStanicaPolaska";
+            this.cbStanicaPolaska.Size = new System.Drawing.Size(224, 24);
+            this.cbStanicaPolaska.TabIndex = 54;
+            // 
+            // cbStanicaDolaska
+            // 
+            this.cbStanicaDolaska.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbStanicaDolaska.FormattingEnabled = true;
+            this.cbStanicaDolaska.Location = new System.Drawing.Point(28, 296);
+            this.cbStanicaDolaska.Name = "cbStanicaDolaska";
+            this.cbStanicaDolaska.Size = new System.Drawing.Size(224, 24);
+            this.cbStanicaDolaska.TabIndex = 55;
+            // 
+            // dtVrijemePolaska
+            // 
+            this.dtVrijemePolaska.CustomFormat = "HH:mm";
+            this.dtVrijemePolaska.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtVrijemePolaska.Location = new System.Drawing.Point(28, 62);
+            this.dtVrijemePolaska.Name = "dtVrijemePolaska";
+            this.dtVrijemePolaska.ShowUpDown = true;
+            this.dtVrijemePolaska.Size = new System.Drawing.Size(224, 22);
+            this.dtVrijemePolaska.TabIndex = 56;
+            this.dtVrijemePolaska.Value = new System.DateTime(2024, 5, 21, 0, 0, 0, 0);
+            // 
+            // dtVrijemeDolaska
+            // 
+            this.dtVrijemeDolaska.CustomFormat = "HH:mm";
+            this.dtVrijemeDolaska.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtVrijemeDolaska.Location = new System.Drawing.Point(28, 140);
+            this.dtVrijemeDolaska.Name = "dtVrijemeDolaska";
+            this.dtVrijemeDolaska.ShowUpDown = true;
+            this.dtVrijemeDolaska.Size = new System.Drawing.Size(224, 22);
+            this.dtVrijemeDolaska.TabIndex = 57;
+            this.dtVrijemeDolaska.Value = new System.DateTime(2024, 5, 21, 0, 0, 0, 0);
+            // 
             // FormaDodajVozniRed
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(632, 413);
+            this.Controls.Add(this.dtVrijemeDolaska);
+            this.Controls.Add(this.dtVrijemePolaska);
+            this.Controls.Add(this.cbStanicaDolaska);
+            this.Controls.Add(this.cbStanicaPolaska);
             this.Controls.Add(this.txtDanUTjednu);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.gumbDodajVozniRed);
-            this.Controls.Add(this.txtStanicaDolaska);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtStanicaPolaska);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.gumbOdustani);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtVrijemeDolaska);
-            this.Controls.Add(this.txtVrijemePolaska);
             this.Controls.Add(this.label1);
             this.Name = "FormaDodajVozniRed";
             this.Text = "FormaDodajVozniRed";
+            this.Load += new System.EventHandler(this.FormaDodajVozniRed_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,16 +199,16 @@
         #endregion
 
         private System.Windows.Forms.Button gumbDodajVozniRed;
-        private System.Windows.Forms.TextBox txtStanicaDolaska;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtStanicaPolaska;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button gumbOdustani;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtVrijemeDolaska;
-        private System.Windows.Forms.TextBox txtVrijemePolaska;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtDanUTjednu;
+        private System.Windows.Forms.ComboBox cbStanicaPolaska;
+        private System.Windows.Forms.ComboBox cbStanicaDolaska;
+        private System.Windows.Forms.DateTimePicker dtVrijemePolaska;
+        private System.Windows.Forms.DateTimePicker dtVrijemeDolaska;
     }
 }

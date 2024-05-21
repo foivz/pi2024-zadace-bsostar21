@@ -46,10 +46,7 @@ namespace BŠoštar___GLines
 
         private void FormaAzurirajLiniju_Load(object sender, EventArgs e)
         {
-            txtNazivLinija.Text = linija.nazivLinije;
-            textVrijemePutovanja.Text = linija.vrijemePutovanja.ToString();
-            cbPolazisnaStanica.Text = linija.polazisnaStanica;
-            cbOdredisnaStanica.Text = linija.odredisnaStanica;
+            
 
             List<Stanica> stanice = StanicaRepozitorij.GetStanice();
 
@@ -58,6 +55,11 @@ namespace BŠoštar___GLines
                 cbPolazisnaStanica.Items.Add(stanica.nazivStanice);
                 cbOdredisnaStanica.Items.Add(stanica.nazivStanice);
             }
+
+            txtNazivLinija.Text = linija.nazivLinije;
+            textVrijemePutovanja.Text = linija.vrijemePutovanja.ToString();
+            cbPolazisnaStanica.Text = linija.polazisnaStanica;
+            cbOdredisnaStanica.Text = linija.odredisnaStanica;
 
         }
     }
