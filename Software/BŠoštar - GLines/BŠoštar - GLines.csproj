@@ -148,11 +148,13 @@
     </Compile>
     <Compile Include="Models\Linija.cs" />
     <Compile Include="Models\Stanica.cs" />
+    <Compile Include="Models\Vozilo.cs" />
     <Compile Include="Models\VozniRed.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repozitoriji\LinijaRepozitorij.cs" />
     <Compile Include="Repozitoriji\StanicaRepozitorij.cs" />
+    <Compile Include="Repozitoriji\VoziloRepozitorij.cs" />
     <Compile Include="Repozitoriji\VozniRedRepozitorij.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
