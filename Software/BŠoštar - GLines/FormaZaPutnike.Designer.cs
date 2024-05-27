@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dvgPutnici = new System.Windows.Forms.DataGridView();
+            this.dgvRed = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.gumbNatrag = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgPutnici)).BeginInit();
+            this.gumbKupi = new System.Windows.Forms.Button();
+            this.gumbInfo = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRed)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -48,15 +50,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "GLINES";
             // 
-            // dvgPutnici
+            // dgvRed
             // 
-            this.dvgPutnici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgPutnici.Location = new System.Drawing.Point(12, 146);
-            this.dvgPutnici.Name = "dvgPutnici";
-            this.dvgPutnici.RowHeadersWidth = 51;
-            this.dvgPutnici.RowTemplate.Height = 24;
-            this.dvgPutnici.Size = new System.Drawing.Size(758, 224);
-            this.dvgPutnici.TabIndex = 2;
+            this.dgvRed.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRed.Location = new System.Drawing.Point(12, 146);
+            this.dgvRed.Name = "dgvRed";
+            this.dgvRed.RowHeadersWidth = 51;
+            this.dgvRed.RowTemplate.Height = 24;
+            this.dgvRed.Size = new System.Drawing.Size(758, 224);
+            this.dgvRed.TabIndex = 2;
             // 
             // label2
             // 
@@ -82,19 +84,46 @@
             this.gumbNatrag.UseVisualStyleBackColor = false;
             this.gumbNatrag.Click += new System.EventHandler(this.gumbZaposlenici_Click);
             // 
+            // gumbKupi
+            // 
+            this.gumbKupi.BackColor = System.Drawing.Color.Black;
+            this.gumbKupi.ForeColor = System.Drawing.Color.Transparent;
+            this.gumbKupi.Location = new System.Drawing.Point(12, 393);
+            this.gumbKupi.Margin = new System.Windows.Forms.Padding(20);
+            this.gumbKupi.Name = "gumbKupi";
+            this.gumbKupi.Size = new System.Drawing.Size(110, 51);
+            this.gumbKupi.TabIndex = 10;
+            this.gumbKupi.Text = "Kupi kartu";
+            this.gumbKupi.UseVisualStyleBackColor = false;
+            // 
+            // gumbInfo
+            // 
+            this.gumbInfo.BackColor = System.Drawing.Color.Black;
+            this.gumbInfo.ForeColor = System.Drawing.Color.Transparent;
+            this.gumbInfo.Location = new System.Drawing.Point(660, 393);
+            this.gumbInfo.Margin = new System.Windows.Forms.Padding(20);
+            this.gumbInfo.Name = "gumbInfo";
+            this.gumbInfo.Size = new System.Drawing.Size(110, 51);
+            this.gumbInfo.TabIndex = 11;
+            this.gumbInfo.Text = "Dodatne info";
+            this.gumbInfo.UseVisualStyleBackColor = false;
+            // 
             // FormaZaPutnike
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
-            this.ClientSize = new System.Drawing.Size(782, 382);
+            this.ClientSize = new System.Drawing.Size(782, 453);
+            this.Controls.Add(this.gumbInfo);
+            this.Controls.Add(this.gumbKupi);
             this.Controls.Add(this.gumbNatrag);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dvgPutnici);
+            this.Controls.Add(this.dgvRed);
             this.Controls.Add(this.label1);
             this.Name = "FormaZaPutnike";
             this.Text = "FormaZaPutnike";
-            ((System.ComponentModel.ISupportInitialize)(this.dvgPutnici)).EndInit();
+            this.Load += new System.EventHandler(this.FormaZaPutnike_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRed)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,8 +132,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dvgPutnici;
+        private System.Windows.Forms.DataGridView dgvRed;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button gumbNatrag;
+        private System.Windows.Forms.Button gumbKupi;
+        private System.Windows.Forms.Button gumbInfo;
     }
 }
