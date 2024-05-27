@@ -47,6 +47,8 @@ namespace BŠoštar___GLines.Repozitoriji
             return linije;
         }
 
+        
+
         private static Linija CreateObject(SqlDataReader reader)
         {
             int id = int.Parse(reader["IdLinija"].ToString());

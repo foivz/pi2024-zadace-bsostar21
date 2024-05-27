@@ -46,6 +46,26 @@ namespace BŠoštar___GLines.Repozitoriji
             return stanice;
         }
 
+        public static List<Stanica> GetStanicaByName(string naziv)
+        {
+            var stanice = new List<Stanica>();
+
+            string sql = $"SELECT * FROM Stanica WHERE nazivStanice LIKE '%{naziv}%'";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Stanica stanica = CreateObject(reader);
+                stanice.Add(stanica);
+            }
+            reader.Close();
+            DB.CloseConnection();
+
+            return stanice;
+        }
+
+
+
         private static Stanica CreateObject(SqlDataReader reader)
         {
             int id = int.Parse(reader["IdStanica"].ToString());
@@ -102,6 +122,7 @@ namespace BŠoštar___GLines.Repozitoriji
             return rowsAffected;
 
         }
+        
 
 
     }

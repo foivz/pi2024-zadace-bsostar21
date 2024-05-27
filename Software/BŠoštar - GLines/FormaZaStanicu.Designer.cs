@@ -109,6 +109,7 @@
             this.txtPretrazivanjeStanice.Name = "txtPretrazivanjeStanice";
             this.txtPretrazivanjeStanice.Size = new System.Drawing.Size(196, 22);
             this.txtPretrazivanjeStanice.TabIndex = 17;
+            this.txtPretrazivanjeStanice.TextChanged += new System.EventHandler(this.txtPretrazivanjeStanice_TextChanged);
             // 
             // label2
             // 

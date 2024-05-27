@@ -3,6 +3,7 @@ using BŠoštar___GLines.Repozitoriji;
 using DBLayer;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace BŠoštar___GLines
@@ -69,6 +70,31 @@ namespace BŠoštar___GLines
             Stanica oznacenaStanica = dgvStanice.CurrentRow.DataBoundItem as Stanica;
             StanicaRepozitorij.Delete(oznacenaStanica);
             RefreshStanica();
+        }
+
+        private void txtPretrazivanjeStanice_TextChanged(object sender, EventArgs e)
+        {
+            string pretrazivanje = txtPretrazivanjeStanice.Text;
+            List<Stanica> stanice = StanicaRepozitorij.GetStanicaByName(pretrazivanje);
+
+            if (stanice.Any())
+            {
+                dgvStanice.DataSource = stanice;
+
+                dgvStanice.Columns["IdStanica"].DisplayIndex = 0;
+                dgvStanice.Columns["nazivStanice"].DisplayIndex = 1;
+                dgvStanice.Columns["adresaStanice"].DisplayIndex = 2;
+
+                dgvStanice.Columns["IdStanica"].HeaderText = "ID Stanice";
+                dgvStanice.Columns["nazivStanice"].HeaderText = "Naziv stanice";
+                dgvStanice.Columns["adresaStanice"].HeaderText = "Adresa stanice";
+            }
+            else
+            {
+                dgvStanice.DataSource = null;
+               
+            }
+            
         }
     }
 }
