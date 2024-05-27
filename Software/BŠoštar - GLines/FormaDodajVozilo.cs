@@ -59,12 +59,12 @@ namespace BŠoštar___GLines
         {
             var linija = LinijaRepozitorij.GetLinije();
             cmbLinija.DataSource = linija;
-            cmbLinija.DisplayMember = "nazivLinije";
+            //cmbLinija.DisplayMember = "nazivLinije";
             cmbLinija.ValueMember = "IdLinija";
 
             var voznired = VozniRedRepozitorij.GetVozneRedove();
             cmbVoziRed.DataSource = voznired;
-            cmbVoziRed.DisplayMember = "stanicaPolaska";
+            //cmbVoziRed.DisplayMember = "stanicaPolaska";
             cmbVoziRed.ValueMember = "IdVozniRed";
         }
     }

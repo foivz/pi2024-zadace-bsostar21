@@ -54,6 +54,7 @@ namespace BŠoštar___GLines
 
             dgvVozilo.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
+
             dgvVozilo.Columns["IdVozilo"].DisplayIndex = 0;
             dgvVozilo.Columns["oznakaVozila"].DisplayIndex = 1;
             dgvVozilo.Columns["modelVozila"].DisplayIndex = 2;
@@ -89,6 +90,46 @@ namespace BŠoštar___GLines
         {
             List<Vozilo> listaVozila = VoziloRepozitorij.GetVozila();
             dgvVozilo.DataSource = listaVozila;
+        }
+
+        private void txtPretrazivanjeVozila_TextChanged(object sender, EventArgs e)
+        {
+            {
+                string pretrazivanje = txtPretrazivanjeVozila.Text;
+                List<Vozilo> vozila = VoziloRepozitorij.GetVoziloByOznaka(pretrazivanje);
+
+                if (vozila.Any())
+                {
+                    dgvVozilo.DataSource = vozila;
+
+                    dgvVozilo.Columns["IdVozilo"].DisplayIndex = 0;
+                    dgvVozilo.Columns["oznakaVozila"].DisplayIndex = 1;
+                    dgvVozilo.Columns["modelVozila"].DisplayIndex = 2;
+                    dgvVozilo.Columns["markaVozila"].DisplayIndex = 3;
+                    dgvVozilo.Columns["nazivVozila"].DisplayIndex = 4;
+                    dgvVozilo.Columns["brojSjedala"].DisplayIndex = 5;
+                    dgvVozilo.Columns["brojSlobodnihMjesta"].DisplayIndex = 6;
+                    dgvVozilo.Columns["IdLinija"].DisplayIndex = 7;
+                    dgvVozilo.Columns["IdVozniRed"].DisplayIndex = 8;
+
+
+
+                    dgvVozilo.Columns["IdVozilo"].HeaderText = "ID Vozila";
+                    dgvVozilo.Columns["oznakaVozila"].HeaderText = "Oznaka";
+                    dgvVozilo.Columns["modelVozila"].HeaderText = "Model";
+                    dgvVozilo.Columns["markaVozila"].HeaderText = "Marka";
+                    dgvVozilo.Columns["nazivVozila"].HeaderText = "Naziv";
+                    dgvVozilo.Columns["brojSjedala"].HeaderText = "Broj sjedala";
+                    dgvVozilo.Columns["brojSlobodnihMjesta"].HeaderText = "Slobodna mjesta";
+                    dgvVozilo.Columns["IdLinija"].HeaderText = "Linija";
+                    dgvVozilo.Columns["IdVozniRed"].HeaderText = "Vozni Red";
+                }
+                else
+                {
+                    dgvVozilo.DataSource = null;
+
+                }
+            }
         }
     }
 }

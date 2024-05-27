@@ -36,6 +36,7 @@
             this.txtPretrazivanjeVoznogReda = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRed)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,12 +136,23 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "Popis voznog reda";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(26, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(490, 16);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Zeleno označeni redovi predstavljaju redove koji se koriste za vozila. Ne brišu s" +
+    "e!";
+            // 
             // FormaZaVozniRed
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(782, 453);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.gumbObrisiVozniRed);
             this.Controls.Add(this.gumbAzurirajVozniRed);
@@ -168,5 +180,6 @@
         private System.Windows.Forms.TextBox txtPretrazivanjeVoznogReda;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }

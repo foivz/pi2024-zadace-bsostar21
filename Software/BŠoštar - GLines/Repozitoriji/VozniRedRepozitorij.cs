@@ -137,5 +137,25 @@ namespace BŠoštar___GLines.Repozitoriji
             return rowsAffected;
 
         }
+
+        public static bool IsVozniRedInUse(int id)
+        {
+            bool isInUse = false;
+
+            string sqlCheckReference = "SELECT COUNT(*) FROM Vozilo WHERE IdVozniRed = " + id;
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sqlCheckReference);
+
+            if (reader.Read())
+            {
+                int count = reader.GetInt32(0);
+                isInUse = count > 0;
+            }
+
+            reader.Close();
+            DB.CloseConnection();
+
+            return isInUse;
+        }
     }
 }

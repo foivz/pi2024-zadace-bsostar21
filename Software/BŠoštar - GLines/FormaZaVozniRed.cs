@@ -69,12 +69,30 @@ namespace BŠoštar___GLines
 
             dgvRed.Columns["vrijemePolaska"].DefaultCellStyle.Format = "HH:mm";
             dgvRed.Columns["vrijemeDolaska"].DefaultCellStyle.Format = "HH:mm";
+
+            foreach (DataGridViewRow row in dgvRed.Rows)
+            {
+                VozniRed red = row.DataBoundItem as VozniRed;
+                if (red != null && VozniRedRepozitorij.IsVozniRedInUse(red.IdVOzniRed))
+                {
+                    row.DefaultCellStyle.BackColor = Color.LimeGreen; 
+                }
+            }
         }
 
         private void RefreshVozniRed()
         {
             List<VozniRed> listaRedova = VozniRedRepozitorij.GetVozneRedove();
             dgvRed.DataSource = listaRedova;
+
+            foreach (DataGridViewRow row in dgvRed.Rows)
+            {
+                VozniRed red = row.DataBoundItem as VozniRed;
+                if (red != null && VozniRedRepozitorij.IsVozniRedInUse(red.IdVOzniRed))
+                {
+                    row.DefaultCellStyle.BackColor = Color.LimeGreen; 
+                }
+            }
         }
 
         private void gumbObrisiVozniRed_Click(object sender, EventArgs e)
@@ -88,6 +106,8 @@ namespace BŠoštar___GLines
         {
             string pretrazivanje = txtPretrazivanjeVoznogReda.Text;
             List<VozniRed> redovi = VozniRedRepozitorij.GetVozniRedByDan(pretrazivanje);
+
+            
 
             if (redovi.Any())
             {
@@ -109,6 +129,15 @@ namespace BŠoštar___GLines
 
                 dgvRed.Columns["vrijemePolaska"].DefaultCellStyle.Format = "HH:mm";
                 dgvRed.Columns["vrijemeDolaska"].DefaultCellStyle.Format = "HH:mm";
+
+                foreach (DataGridViewRow row in dgvRed.Rows)
+                {
+                    VozniRed red = row.DataBoundItem as VozniRed;
+                    if (red != null && VozniRedRepozitorij.IsVozniRedInUse(red.IdVOzniRed))
+                    {
+                        row.DefaultCellStyle.BackColor = Color.LimeGreen; 
+                    }
+                }
             }
             else
             {

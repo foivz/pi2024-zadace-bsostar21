@@ -142,6 +142,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "FormaZaZaposlenike";
             this.Text = "FormaZaZaposlenike";
+            this.Load += new System.EventHandler(this.FormaZaZaposlenike_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -59,13 +59,24 @@ namespace BŠoštar___GLines
             dgvLinije.Columns["odredisnaStanica"].HeaderText = "Stanica odredišta";
             dgvLinije.Columns["vrijemePutovanja"].HeaderText = "Vrijeme putovanja u minutama";
 
-
+            
+            foreach (DataGridViewRow row in dgvLinije.Rows)
+            {
+                Linija linija = row.DataBoundItem as Linija;
+                if (linija != null && LinijaRepozitorij.IsLinijaInUse(linija.idLinija))
+                {
+                    row.DefaultCellStyle.BackColor = Color.LimeGreen; 
+                }
+            }
         }
+
 
         private void FormaZaLiniju_Load(object sender, EventArgs e)
         {
             DB.SetConfiguration("PI2324_bsostar21_DB", "PI2324_bsostar21_User", "3DeGe:j]");
             ShowLinije();
+
+
         }
 
         private void gumbObrisiLiniju_Click(object sender, EventArgs e)
@@ -79,12 +90,23 @@ namespace BŠoštar___GLines
         {
             List<Linija> listaLinija = LinijaRepozitorij.GetLinije();
             dgvLinije.DataSource = listaLinija;
+
+            foreach (DataGridViewRow row in dgvLinije.Rows)
+            {
+                Linija linija = row.DataBoundItem as Linija;
+                if (linija != null && LinijaRepozitorij.IsLinijaInUse(linija.idLinija))
+                {
+                    row.DefaultCellStyle.BackColor = Color.LimeGreen; 
+                }
+            }
         }
 
         private void txtPretrazivanjeLinije_TextChanged(object sender, EventArgs e)
         {
             string pretrazivanje = txtPretrazivanjeLinije.Text;
             List<Linija> linije = LinijaRepozitorij.GetLinijaByName(pretrazivanje);
+
+            
 
             if (linije.Any())
             {
@@ -101,6 +123,15 @@ namespace BŠoštar___GLines
                 dgvLinije.Columns["polazisnaStanica"].HeaderText = "Stanica polazišta";
                 dgvLinije.Columns["odredisnaStanica"].HeaderText = "Stanica odredišta";
                 dgvLinije.Columns["vrijemePutovanja"].HeaderText = "Vrijeme putovanja u minutama";
+
+                foreach (DataGridViewRow row in dgvLinije.Rows)
+                {
+                    Linija linija = row.DataBoundItem as Linija;
+                    if (linija != null && LinijaRepozitorij.IsLinijaInUse(linija.idLinija))
+                    {
+                        row.DefaultCellStyle.BackColor = Color.LimeGreen;        
+                    }
+                }
             }
             else
             {

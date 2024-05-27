@@ -36,6 +36,7 @@
             this.txtPretrazivanjeLinije = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,12 +136,23 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "Popis linija";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(26, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(474, 16);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "Zeleno označeni redovi predstavljaju linije koji se koriste za vozila. Ne brišu s" +
+    "e!";
+            // 
             // FormaZaLiniju
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(782, 453);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.gumbObrisiLiniju);
             this.Controls.Add(this.gumbAzurirajLiniju);
@@ -168,5 +180,6 @@
         private System.Windows.Forms.TextBox txtPretrazivanjeLinije;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }

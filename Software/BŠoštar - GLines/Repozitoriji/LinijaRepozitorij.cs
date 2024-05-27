@@ -65,6 +65,7 @@ namespace BŠoštar___GLines.Repozitoriji
             return linije;
         }
 
+
         private static Linija CreateObject(SqlDataReader reader)
         {
             int id = int.Parse(reader["IdLinija"].ToString());
@@ -125,6 +126,26 @@ namespace BŠoštar___GLines.Repozitoriji
 
             return rowsAffected;
 
+        }
+
+        public static bool IsLinijaInUse(int id)
+        {
+            bool isInUse = false;
+
+            string sqlCheckReference = "SELECT COUNT(*) FROM Vozilo WHERE IdLinija = " + id;
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sqlCheckReference);
+
+            if (reader.Read())
+            {
+                int count = reader.GetInt32(0);
+                isInUse = count > 0;
+            }
+
+            reader.Close();
+            DB.CloseConnection();
+
+            return isInUse;
         }
     }
 }

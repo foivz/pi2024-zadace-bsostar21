@@ -46,6 +46,24 @@ namespace BŠoštar___GLines.Repozitoriji
             return vozila;
         }
 
+        public static List<Vozilo> GetVoziloByOznaka(string oznaka)
+        {
+            var vozila = new List<Vozilo>();
+
+            string sql = $"SELECT * FROM Vozilo WHERE oznakaVozila LIKE '%{oznaka}%'";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Vozilo vozilo = CreateObject(reader);
+                vozila.Add(vozilo);
+            }
+            reader.Close();
+            DB.CloseConnection();
+
+            return vozila;
+        }
+
         private static Vozilo CreateObject(SqlDataReader reader)
         {
             int id = int.Parse(reader["IdVozilo"].ToString());

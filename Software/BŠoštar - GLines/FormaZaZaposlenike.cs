@@ -45,5 +45,10 @@ namespace BŠoštar___GLines
             FormaZaVozniRed formaZaVozniRed = new FormaZaVozniRed();
             formaZaVozniRed.ShowDialog();
         }
+
+        private void FormaZaZaposlenike_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
