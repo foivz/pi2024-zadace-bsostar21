@@ -33,6 +33,14 @@ namespace BŠoštar___GLines
                 cbStanicaPolaska.Items.Add(stanica.nazivStanice);
                 cbStanicaDolaska.Items.Add(stanica.nazivStanice);
             }
+            
+            string[] daniUTjednu = { "Ponedjeljak", "Utorak", "Srijeda", "Četvrtak", "Petak", "Subota", "Nedjelja" };
+            
+            foreach (var dan in daniUTjednu)
+            {
+                cmbDani.Items.Add(dan);
+            }
+            
         }
 
         private void gumbDodajVozniRed_Click(object sender, EventArgs e)
@@ -41,7 +49,7 @@ namespace BŠoštar___GLines
             string stanicadolazak = cbStanicaDolaska.Text;
             DateTime vrijemepolazak = dtVrijemePolaska.Value;
             DateTime vrijemedolazak = dtVrijemeDolaska.Value;
-            string dani = txtDanUTjednu.Text;
+            string odabraniDan = cmbDani.SelectedItem?.ToString(); 
 
             var redovi = new VozniRed
             {
@@ -49,9 +57,9 @@ namespace BŠoštar___GLines
                 stanicaDolaska = stanicadolazak,
                 vrijemePolaska = vrijemepolazak,
                 vrijemeDolaska = vrijemedolazak,
-                danUTjednu = dani,
-
+                danUTjednu = odabraniDan
             };
+
             VozniRedRepozitorij.Save(redovi);
 
             this.Close();

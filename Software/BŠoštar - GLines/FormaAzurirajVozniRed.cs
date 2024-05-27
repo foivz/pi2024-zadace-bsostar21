@@ -34,7 +34,7 @@ namespace BŠoštar___GLines
             red.vrijemeDolaska = dtVrijemeDolaska.Value;
             red.stanicaPolaska = cbStanicaPolaska.Text;
             red.stanicaDolaska = cbStanicaDolaska.Text;
-            red.danUTjednu = txtDanUTjednu.Text;
+            red.danUTjednu = cmbDani.SelectedItem?.ToString();
 
             VozniRedRepozitorij.Update(red);
             this.Close();
@@ -50,15 +50,22 @@ namespace BŠoštar___GLines
                 cbStanicaDolaska.Items.Add(stanica.nazivStanice);
             }
 
+            string[] daniUTjednu = { "Ponedjeljak", "Utorak", "Srijeda", "Četvrtak", "Petak", "Subota", "Nedjelja" };
+
+            foreach (var dan in daniUTjednu)
+            {
+                cmbDani.Items.Add(dan);
+            }
+
             dtVrijemePolaska.Value = red.vrijemePolaska;
             dtVrijemeDolaska.Value = red.vrijemeDolaska;
 
             cbStanicaPolaska.Text = red.stanicaPolaska;
             cbStanicaDolaska.Text = red.stanicaDolaska;
 
-            txtDanUTjednu.Text = red.danUTjednu;
+            cmbDani.Text = red.danUTjednu;
 
-
+            
 
         }
     }

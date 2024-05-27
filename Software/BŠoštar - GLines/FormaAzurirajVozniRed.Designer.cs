@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtDanUTjednu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.gumbAzurirajVozniRed = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,14 +39,8 @@
             this.cbStanicaDolaska = new System.Windows.Forms.ComboBox();
             this.dtVrijemePolaska = new System.Windows.Forms.DateTimePicker();
             this.dtVrijemeDolaska = new System.Windows.Forms.DateTimePicker();
+            this.cmbDani = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // txtDanUTjednu
-            // 
-            this.txtDanUTjednu.Location = new System.Drawing.Point(31, 374);
-            this.txtDanUTjednu.Name = "txtDanUTjednu";
-            this.txtDanUTjednu.Size = new System.Drawing.Size(224, 22);
-            this.txtDanUTjednu.TabIndex = 65;
             // 
             // label5
             // 
@@ -170,17 +163,26 @@
             this.dtVrijemeDolaska.TabIndex = 69;
             this.dtVrijemeDolaska.Value = new System.DateTime(2024, 5, 21, 0, 0, 0, 0);
             // 
+            // cmbDani
+            // 
+            this.cmbDani.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDani.FormattingEnabled = true;
+            this.cmbDani.Location = new System.Drawing.Point(28, 374);
+            this.cmbDani.Name = "cmbDani";
+            this.cmbDani.Size = new System.Drawing.Size(224, 24);
+            this.cmbDani.TabIndex = 70;
+            // 
             // FormaAzurirajVozniRed
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(632, 413);
+            this.Controls.Add(this.cmbDani);
             this.Controls.Add(this.dtVrijemeDolaska);
             this.Controls.Add(this.dtVrijemePolaska);
             this.Controls.Add(this.cbStanicaDolaska);
             this.Controls.Add(this.cbStanicaPolaska);
-            this.Controls.Add(this.txtDanUTjednu);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.gumbAzurirajVozniRed);
             this.Controls.Add(this.label4);
@@ -197,8 +199,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtDanUTjednu;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button gumbAzurirajVozniRed;
         private System.Windows.Forms.Label label4;
@@ -210,5 +210,6 @@
         private System.Windows.Forms.ComboBox cbStanicaDolaska;
         private System.Windows.Forms.DateTimePicker dtVrijemePolaska;
         private System.Windows.Forms.DateTimePicker dtVrijemeDolaska;
+        private System.Windows.Forms.ComboBox cmbDani;
     }
 }

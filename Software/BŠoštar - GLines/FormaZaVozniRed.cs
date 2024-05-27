@@ -83,5 +83,38 @@ namespace BŠoštar___GLines
             VozniRedRepozitorij.Delete(oznaceniVozniRed);
             RefreshVozniRed();
         }
+
+        private void txtPretrazivanjeVoznogReda_TextChanged(object sender, EventArgs e)
+        {
+            string pretrazivanje = txtPretrazivanjeVoznogReda.Text;
+            List<VozniRed> redovi = VozniRedRepozitorij.GetVozniRedByDan(pretrazivanje);
+
+            if (redovi.Any())
+            {
+                dgvRed.DataSource = redovi;
+
+                dgvRed.Columns["IdVozniRed"].DisplayIndex = 0;
+                dgvRed.Columns["stanicaPolaska"].DisplayIndex = 1;
+                dgvRed.Columns["vrijemePolaska"].DisplayIndex = 2;
+                dgvRed.Columns["stanicaDolaska"].DisplayIndex = 3;
+                dgvRed.Columns["vrijemeDolaska"].DisplayIndex = 4;
+                dgvRed.Columns["danUTjednu"].DisplayIndex = 5;
+
+                dgvRed.Columns["IdVozniRed"].HeaderText = "ID Voznog reda";
+                dgvRed.Columns["stanicaPolaska"].HeaderText = "Stanica polaska";
+                dgvRed.Columns["vrijemePolaska"].HeaderText = "Vrijeme polaska";
+                dgvRed.Columns["stanicaDolaska"].HeaderText = "Stanica dolaska";
+                dgvRed.Columns["vrijemeDolaska"].HeaderText = "Vrijeme dolaska";
+                dgvRed.Columns["danUTjednu"].HeaderText = "Dan";
+
+                dgvRed.Columns["vrijemePolaska"].DefaultCellStyle.Format = "HH:mm";
+                dgvRed.Columns["vrijemeDolaska"].DefaultCellStyle.Format = "HH:mm";
+            }
+            else
+            {
+                dgvRed.DataSource = null;
+
+            }
+        }
     }
 }

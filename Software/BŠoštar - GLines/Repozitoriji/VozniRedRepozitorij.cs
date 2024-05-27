@@ -46,6 +46,24 @@ namespace BŠoštar___GLines.Repozitoriji
             return voznuredovi;
         }
 
+        public static List<VozniRed> GetVozniRedByDan(string dan)
+        {
+            var redovi = new List<VozniRed>();
+
+            string sql = $"SELECT * FROM VozniRed WHERE danUTjednu LIKE '%{dan}%'";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                VozniRed red = CreateObject(reader);
+                redovi.Add(red);
+            }
+            reader.Close();
+            DB.CloseConnection();
+
+            return redovi;
+        }
+
         private static VozniRed CreateObject(SqlDataReader reader)
         {
             int id = int.Parse(reader["IdVozniRed"].ToString());

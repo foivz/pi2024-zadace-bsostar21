@@ -109,6 +109,7 @@
             this.txtPretrazivanjeVoznogReda.Name = "txtPretrazivanjeVoznogReda";
             this.txtPretrazivanjeVoznogReda.Size = new System.Drawing.Size(196, 22);
             this.txtPretrazivanjeVoznogReda.TabIndex = 33;
+            this.txtPretrazivanjeVoznogReda.TextChanged += new System.EventHandler(this.txtPretrazivanjeVoznogReda_TextChanged);
             // 
             // label2
             // 
