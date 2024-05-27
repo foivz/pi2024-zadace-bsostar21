@@ -47,7 +47,23 @@ namespace BŠoštar___GLines.Repozitoriji
             return linije;
         }
 
-        
+        public static List<Linija> GetLinijaByName(string naziv)
+        {
+            var linije = new List<Linija>();
+
+            string sql = $"SELECT * FROM Linija WHERE nazivLinije LIKE '%{naziv}%'";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Linija linija = CreateObject(reader);
+                linije.Add(linija);
+            }
+            reader.Close();
+            DB.CloseConnection();
+
+            return linije;
+        }
 
         private static Linija CreateObject(SqlDataReader reader)
         {

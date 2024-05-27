@@ -80,5 +80,33 @@ namespace BŠoštar___GLines
             List<Linija> listaLinija = LinijaRepozitorij.GetLinije();
             dgvLinije.DataSource = listaLinija;
         }
+
+        private void txtPretrazivanjeLinije_TextChanged(object sender, EventArgs e)
+        {
+            string pretrazivanje = txtPretrazivanjeLinije.Text;
+            List<Linija> linije = LinijaRepozitorij.GetLinijaByName(pretrazivanje);
+
+            if (linije.Any())
+            {
+                dgvLinije.DataSource = linije;
+
+                dgvLinije.Columns["IdLinija"].DisplayIndex = 0;
+                dgvLinije.Columns["nazivLinije"].DisplayIndex = 1;
+                dgvLinije.Columns["polazisnaStanica"].DisplayIndex = 2;
+                dgvLinije.Columns["odredisnaStanica"].DisplayIndex = 3;
+                dgvLinije.Columns["vrijemePutovanja"].DisplayIndex = 4;
+
+                dgvLinije.Columns["IdLinija"].HeaderText = "ID Linije";
+                dgvLinije.Columns["nazivLinije"].HeaderText = "Naziv liinje";
+                dgvLinije.Columns["polazisnaStanica"].HeaderText = "Stanica polazišta";
+                dgvLinije.Columns["odredisnaStanica"].HeaderText = "Stanica odredišta";
+                dgvLinije.Columns["vrijemePutovanja"].HeaderText = "Vrijeme putovanja u minutama";
+            }
+            else
+            {
+                dgvLinije.DataSource = null;
+
+            }
+        }
     }
 }
