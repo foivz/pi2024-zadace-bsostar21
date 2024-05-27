@@ -19,7 +19,10 @@ namespace BŠoštar___GLines
 
         private void button5_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Uspejšno ste se odjavili!", "Odjava", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
             this.Close();
+            
         }
 
         private void gumbVozilo_Click(object sender, EventArgs e)

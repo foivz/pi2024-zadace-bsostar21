@@ -47,12 +47,12 @@ namespace BŠoštar___GLines
                     txtVozilo.Text = vozilo.oznakaVozila;
                     txtKasnjenje.Text = GenerirajKasnjenje().ToString();
                     txtStanica.Text = red.stanicaPolaska;
-                    napomena.Text = "NAPOMENA: Nema napomene";
+                    napomena.Text = "NAPOMENA: Nema napomene.";
 
                 }
                 else
                 {
-                    napomena.Text = "NAPOMENA: Za odabrani vozni red, trenutno nije definirano nijedno vozilo";
+                    napomena.Text = "NAPOMENA: Za odabrani vozni red, trenutno nije definirano nijedno vozilo!";
                 }
             }
 

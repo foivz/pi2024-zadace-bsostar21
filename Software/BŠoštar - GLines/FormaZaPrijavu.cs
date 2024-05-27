@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BŠoštar___GLines.Models;
+using BŠoštar___GLines.Repozitoriji;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +14,7 @@ namespace BŠoštar___GLines
 {
     public partial class FormaZaPrijavu : Form
     {
-        string username = "zaposlenik";
-        string password = "glines123";
+        public static Zaposlenik prijavljeniZaposlenik {  get; set; }
 
         public FormaZaPrijavu()
         {
@@ -34,15 +35,18 @@ namespace BŠoštar___GLines
             }
             else
             {
-                if (txtKorIme.Text == username && txtLozinka.Text == password)
+                prijavljeniZaposlenik = ZaposlenikRepozitorij.GetZaposlenik(txtKorIme.Text);
+
+                if (prijavljeniZaposlenik != null && prijavljeniZaposlenik.lozinka == txtLozinka.Text) 
                 {
-                    MessageBox.Show("Uspješna prijava", "Dobrodošli",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Uspješna prijava!", "Dobrodošli", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     FormaZaZaposlenike formaZaZaposlenike = new FormaZaZaposlenike();
                     Hide();
                     formaZaZaposlenike.ShowDialog();
                     Close();
+
+                    
                 }
                 else
                 {
