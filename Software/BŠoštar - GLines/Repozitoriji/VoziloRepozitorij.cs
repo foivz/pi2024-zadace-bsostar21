@@ -142,5 +142,22 @@ namespace BŠoštar___GLines.Repozitoriji
             return rowsAffected;
 
         }
+
+        public static Vozilo GetVoziloByVozniRedId(int id)
+        {
+            Vozilo vozilo = null;
+
+            string sql = $"SELECT * FROM Vozilo WHERE IdVozniRed = {id}";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            if (reader.HasRows)
+            {
+                reader.Read();
+                vozilo = CreateObject(reader);
+                reader.Close();
+            }
+            DB.CloseConnection();
+            return vozilo;
+        }
     }
 }

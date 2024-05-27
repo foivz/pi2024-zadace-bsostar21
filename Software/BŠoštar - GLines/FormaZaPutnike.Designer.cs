@@ -95,6 +95,7 @@
             this.gumbKupi.TabIndex = 10;
             this.gumbKupi.Text = "Kupi kartu";
             this.gumbKupi.UseVisualStyleBackColor = false;
+            this.gumbKupi.Click += new System.EventHandler(this.gumbKupi_Click);
             // 
             // gumbInfo
             // 
@@ -107,6 +108,7 @@
             this.gumbInfo.TabIndex = 11;
             this.gumbInfo.Text = "Dodatne info";
             this.gumbInfo.UseVisualStyleBackColor = false;
+            this.gumbInfo.Click += new System.EventHandler(this.gumbInfo_Click);
             // 
             // FormaZaPutnike
             // 

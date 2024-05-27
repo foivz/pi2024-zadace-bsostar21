@@ -1,4 +1,5 @@
-﻿using BŠoštar___GLines.Repozitoriji;
+﻿using BŠoštar___GLines.Models;
+using BŠoštar___GLines.Repozitoriji;
 using DBLayer;
 using System;
 using System.Collections.Generic;
@@ -53,6 +54,19 @@ namespace BŠoštar___GLines
 
             dgvRed.Columns["vrijemePolaska"].DefaultCellStyle.Format = "HH:mm";
             dgvRed.Columns["vrijemeDolaska"].DefaultCellStyle.Format = "HH:mm";
+        }
+
+        private void gumbInfo_Click(object sender, EventArgs e)
+        {
+            VozniRed oznaceniVozniRed = dgvRed.CurrentRow.DataBoundItem as VozniRed;
+            FormaZaDodatneInformacije formaZaDodatne = new FormaZaDodatneInformacije(oznaceniVozniRed);
+            formaZaDodatne.ShowDialog();
+        }
+
+        private void gumbKupi_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Kupili ste kartu", "Uspejšna kupnja",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

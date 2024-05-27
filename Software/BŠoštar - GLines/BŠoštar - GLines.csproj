@@ -104,6 +104,12 @@
     <Compile Include="FormaDodajVozniRed.Designer.cs">
       <DependentUpon>FormaDodajVozniRed.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaZaDodatneInformacije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZaDodatneInformacije.Designer.cs">
+      <DependentUpon>FormaZaDodatneInformacije.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormaZaLiniju.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormaDodajVozniRed.resx">
       <DependentUpon>FormaDodajVozniRed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaZaDodatneInformacije.resx">
+      <DependentUpon>FormaZaDodatneInformacije.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaZaLiniju.resx">
       <DependentUpon>FormaZaLiniju.cs</DependentUpon>
