@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BŠoštar___GLines.Repozitoriji
 {
@@ -95,17 +96,24 @@ namespace BŠoštar___GLines.Repozitoriji
 
         }
 
-        public static int Delete(Stanica stanice)
+        public static int Delete(Stanica stanica)
         {
-            string sqlDelete = "DELETE FROM Stanica WHERE IdStanica = " + stanice.idStanica;
+            if (IsStanicaInUse(stanica.idStanica))
+            {
+                MessageBox.Show("Stanica se koristi.", "Upozorenje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return -1; 
+            }
+            else
+            {
+                string sqlDelete = "DELETE FROM Stanica WHERE IdStanica = " + stanica.idStanica;
 
-            DB.OpenConnection();
-            int rowsAffected = DB.ExecuteCommand(sqlDelete);
-            DB.CloseConnection();
-
-            return rowsAffected;
-
+                DB.OpenConnection();
+                int rowsAffected = DB.ExecuteCommand(sqlDelete);
+                DB.CloseConnection();
+                return rowsAffected; 
+            }
         }
+
 
         public static int Update(Stanica stanice)
         {
@@ -122,7 +130,27 @@ namespace BŠoštar___GLines.Repozitoriji
             return rowsAffected;
 
         }
-        
+
+        public static bool IsStanicaInUse(int id)
+        {
+            bool isInUse = false;
+
+            string sqlCheckReference = "SELECT COUNT(*) FROM StanicaLinija WHERE IdStanica = " + id;
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sqlCheckReference);
+
+            if (reader.Read())
+            {
+                int count = reader.GetInt32(0);
+                isInUse = count > 0;
+            }
+
+            reader.Close();
+            DB.CloseConnection();
+
+            return isInUse;
+        }
+
 
 
     }

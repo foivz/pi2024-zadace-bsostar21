@@ -39,6 +39,7 @@ namespace BŠoštar___GLines
             dgvRed.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             dgvRed.Columns["IdVozniRed"].Visible = false;
+            dgvRed.Columns["IdLinija"].Visible = false;
 
             dgvRed.Columns["stanicaPolaska"].DisplayIndex = 1;
             dgvRed.Columns["vrijemePolaska"].DisplayIndex = 2;

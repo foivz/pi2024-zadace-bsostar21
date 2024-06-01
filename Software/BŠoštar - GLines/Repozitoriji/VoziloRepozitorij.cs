@@ -73,7 +73,6 @@ namespace BŠoštar___GLines.Repozitoriji
             string naziv = reader["nazivVozila"].ToString();
             int sjedala = int.Parse(reader["brojSjedala"].ToString());
             int mjesta = int.Parse(reader["brojSlobodnihMjesta"].ToString());
-            int linija = int.Parse(reader["IdLinija"].ToString());
             int voznired = int.Parse(reader["IdVozniRed"].ToString());
 
 
@@ -86,7 +85,6 @@ namespace BŠoštar___GLines.Repozitoriji
                 nazivVozila = naziv,
                 brojSjedala = sjedala,
                 brojSlobodnihMjesta = mjesta,
-                IdLinija = linija,
                 IdVozniRed = voznired,
             };
 
@@ -97,8 +95,8 @@ namespace BŠoštar___GLines.Repozitoriji
         {
 
             string sqlInsert = "";
-            sqlInsert = "INSERT INTO Vozilo (oznakaVozila, modelVozila, markaVozila, nazivVozila, brojSjedala, brojSlobodnihMjesta, IdLinija, IdVozniRed  ) " +
-                "VALUES ('" + vozilo.oznakaVozila + "', '" + vozilo.modelVozila + "', '" + vozilo.markaVozila + "', '" + vozilo.nazivVozila + "', '" + vozilo.brojSjedala + "', '" + vozilo.brojSlobodnihMjesta + "', '" + vozilo.IdLinija + "','" + vozilo.IdVozniRed + "')";
+            sqlInsert = "INSERT INTO Vozilo (oznakaVozila, modelVozila, markaVozila, nazivVozila, brojSjedala, brojSlobodnihMjesta, IdVozniRed  ) " +
+                "VALUES ('" + vozilo.oznakaVozila + "', '" + vozilo.modelVozila + "', '" + vozilo.markaVozila + "', '" + vozilo.nazivVozila + "', '" + vozilo.brojSjedala + "', '" + vozilo.brojSlobodnihMjesta +  "','" + vozilo.IdVozniRed + "')";
 
             DB.OpenConnection();
             int rowsAffected = DB.ExecuteCommand(sqlInsert);
@@ -131,8 +129,7 @@ namespace BŠoštar___GLines.Repozitoriji
                 + vozilo.markaVozila + "', nazivVozila = '"
                 + vozilo.nazivVozila + "', brojSjedala = '"
                 + vozilo.brojSjedala + "', brojSlobodnihMjesta = '"
-                + vozilo.brojSlobodnihMjesta + "',IdLinija = '"
-                + vozilo.IdLinija + "', IdVozniRed = '"
+                + vozilo.brojSlobodnihMjesta + "', IdVozniRed = '"
                 + vozilo.IdVozniRed
                 + "' WHERE IdVozilo = " + vozilo.IdVozilo;
             DB.OpenConnection();
@@ -159,5 +156,6 @@ namespace BŠoštar___GLines.Repozitoriji
             DB.CloseConnection();
             return vozilo;
         }
+
     }
 }

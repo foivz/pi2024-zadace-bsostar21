@@ -3,6 +3,7 @@ using BŠoštar___GLines.Repozitoriji;
 using DBLayer;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -48,21 +49,40 @@ namespace BŠoštar___GLines
 
             dgvStanice.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
+            dgvStanice.Columns["StanicaLinije"].Visible = false;
+
             dgvStanice.Columns["IdStanica"].DisplayIndex = 0;
             dgvStanice.Columns["nazivStanice"].DisplayIndex = 1;
             dgvStanice.Columns["adresaStanice"].DisplayIndex = 2;
+            
 
             dgvStanice.Columns["IdStanica"].HeaderText = "ID Stanice";
             dgvStanice.Columns["nazivStanice"].HeaderText = "Naziv stanice";
             dgvStanice.Columns["adresaStanice"].HeaderText = "Adresa stanice";
 
-
+            foreach (DataGridViewRow row in dgvStanice.Rows)
+            {
+                Stanica stanica = row.DataBoundItem as Stanica;
+                if (stanica != null && StanicaRepozitorij.IsStanicaInUse(stanica.idStanica)) 
+                {
+                    row.DefaultCellStyle.BackColor = Color.LimeGreen;
+                }
+            }
         }
 
         private void RefreshStanica()
         {
             List<Stanica> listaStanica = StanicaRepozitorij.GetStanice();
             dgvStanice.DataSource = listaStanica;
+
+            foreach (DataGridViewRow row in dgvStanice.Rows)
+            {
+                Stanica stanica = row.DataBoundItem as Stanica;
+                if (stanica != null && StanicaRepozitorij.IsStanicaInUse(stanica.idStanica))
+                {
+                    row.DefaultCellStyle.BackColor = Color.LimeGreen;
+                }
+            }
         }
 
         private void gumbObrisiStanicu_Click(object sender, EventArgs e)
@@ -88,6 +108,15 @@ namespace BŠoštar___GLines
                 dgvStanice.Columns["IdStanica"].HeaderText = "ID Stanice";
                 dgvStanice.Columns["nazivStanice"].HeaderText = "Naziv stanice";
                 dgvStanice.Columns["adresaStanice"].HeaderText = "Adresa stanice";
+
+                foreach (DataGridViewRow row in dgvStanice.Rows)
+                {
+                    Stanica stanica = row.DataBoundItem as Stanica;
+                    if (stanica != null && StanicaRepozitorij.IsStanicaInUse(stanica.idStanica))
+                    {
+                        row.DefaultCellStyle.BackColor = Color.LimeGreen;
+                    }
+                }
             }
             else
             {

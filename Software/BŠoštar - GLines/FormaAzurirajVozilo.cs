@@ -30,10 +30,6 @@ namespace BŠoštar___GLines
 
         private void FormaAzurirajVozilo_Load(object sender, EventArgs e)
         {
-            var linija = LinijaRepozitorij.GetLinije();
-            cmbLinija.DataSource = linija;
-            //cmbLinija.DisplayMember = "nazivLinije";
-            cmbLinija.ValueMember = "IdLinija";
 
             var voznired = VozniRedRepozitorij.GetVozneRedove();
             cmbVoziRed.DataSource = voznired;
@@ -47,8 +43,6 @@ namespace BŠoštar___GLines
             textNazivVozilo.Text = vozilo.nazivVozila;
             txtBrojSjedala.Text = vozilo.brojSjedala.ToString();
             txtSlobodnaMjesta.Text = vozilo.brojSlobodnihMjesta.ToString();
-
-            cmbLinija.Text = vozilo.IdLinija.ToString();
             cmbVoziRed.Text = vozilo.IdVozniRed.ToString(); 
         }
 
@@ -70,11 +64,6 @@ namespace BŠoštar___GLines
                 vozilo.brojSlobodnihMjesta = mjesta;
             }
 
-            int linija;
-            if(int.TryParse(cmbLinija.Text, out linija))
-            {
-                vozilo.IdLinija = linija;
-            }
             int voznired;
             if(int.TryParse(cmbVoziRed.Text, out voznired))
             {

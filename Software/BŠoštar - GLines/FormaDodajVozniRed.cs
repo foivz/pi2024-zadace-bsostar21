@@ -26,6 +26,12 @@ namespace BŠoštar___GLines
 
         private void FormaDodajVozniRed_Load(object sender, EventArgs e)
         {
+
+            var linija = LinijaRepozitorij.GetLinije();
+            cbLinija.DataSource = linija;
+            cbLinija.DisplayMember = "nazivLinije";
+            cbLinija.ValueMember = "IdLinija";
+
             List<Stanica> stanice = StanicaRepozitorij.GetStanice();
 
             foreach (var stanica in stanice)
@@ -49,7 +55,8 @@ namespace BŠoštar___GLines
             string stanicadolazak = cbStanicaDolaska.Text;
             DateTime vrijemepolazak = dtVrijemePolaska.Value;
             DateTime vrijemedolazak = dtVrijemeDolaska.Value;
-            string odabraniDan = cmbDani.SelectedItem?.ToString(); 
+            string odabraniDan = cmbDani.SelectedItem?.ToString();
+            int linija = (int)cbLinija.SelectedValue;
 
             var redovi = new VozniRed
             {
@@ -57,7 +64,8 @@ namespace BŠoštar___GLines
                 stanicaDolaska = stanicadolazak,
                 vrijemePolaska = vrijemepolazak,
                 vrijemeDolaska = vrijemedolazak,
-                danUTjednu = odabraniDan
+                danUTjednu = odabraniDan,
+                IdLinija = linija,
             };
 
             VozniRedRepozitorij.Save(redovi);

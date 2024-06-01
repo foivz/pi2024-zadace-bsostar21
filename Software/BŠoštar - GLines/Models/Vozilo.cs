@@ -15,7 +15,6 @@ namespace BŠoštar___GLines.Models
         public string nazivVozila { get; set; }
         public int brojSjedala { get; set; }
         public int brojSlobodnihMjesta { get; set; }
-        public int IdLinija { get; set; }
         public int IdVozniRed {  get; set; }
 
         public override string ToString()

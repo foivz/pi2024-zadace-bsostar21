@@ -44,10 +44,10 @@
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(643, 378);
-            this.button5.Margin = new System.Windows.Forms.Padding(15);
+            this.button5.Location = new System.Drawing.Point(482, 307);
+            this.button5.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(110, 51);
+            this.button5.Size = new System.Drawing.Size(82, 41);
             this.button5.TabIndex = 30;
             this.button5.Text = "Natrag";
             this.button5.UseVisualStyleBackColor = false;
@@ -57,10 +57,10 @@
             // 
             this.gumbObrisiLiniju.BackColor = System.Drawing.Color.Black;
             this.gumbObrisiLiniju.ForeColor = System.Drawing.Color.Transparent;
-            this.gumbObrisiLiniju.Location = new System.Drawing.Point(309, 378);
-            this.gumbObrisiLiniju.Margin = new System.Windows.Forms.Padding(15);
+            this.gumbObrisiLiniju.Location = new System.Drawing.Point(232, 307);
+            this.gumbObrisiLiniju.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.gumbObrisiLiniju.Name = "gumbObrisiLiniju";
-            this.gumbObrisiLiniju.Size = new System.Drawing.Size(110, 51);
+            this.gumbObrisiLiniju.Size = new System.Drawing.Size(82, 41);
             this.gumbObrisiLiniju.TabIndex = 29;
             this.gumbObrisiLiniju.Text = "Obriši";
             this.gumbObrisiLiniju.UseVisualStyleBackColor = false;
@@ -70,10 +70,10 @@
             // 
             this.gumbAzurirajLiniju.BackColor = System.Drawing.Color.Black;
             this.gumbAzurirajLiniju.ForeColor = System.Drawing.Color.Transparent;
-            this.gumbAzurirajLiniju.Location = new System.Drawing.Point(169, 378);
-            this.gumbAzurirajLiniju.Margin = new System.Windows.Forms.Padding(15);
+            this.gumbAzurirajLiniju.Location = new System.Drawing.Point(127, 307);
+            this.gumbAzurirajLiniju.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.gumbAzurirajLiniju.Name = "gumbAzurirajLiniju";
-            this.gumbAzurirajLiniju.Size = new System.Drawing.Size(110, 51);
+            this.gumbAzurirajLiniju.Size = new System.Drawing.Size(82, 41);
             this.gumbAzurirajLiniju.TabIndex = 28;
             this.gumbAzurirajLiniju.Text = "Ažuriraj";
             this.gumbAzurirajLiniju.UseVisualStyleBackColor = false;
@@ -83,10 +83,10 @@
             // 
             this.gumbDodajLiniju.BackColor = System.Drawing.Color.Black;
             this.gumbDodajLiniju.ForeColor = System.Drawing.Color.Transparent;
-            this.gumbDodajLiniju.Location = new System.Drawing.Point(29, 378);
-            this.gumbDodajLiniju.Margin = new System.Windows.Forms.Padding(15);
+            this.gumbDodajLiniju.Location = new System.Drawing.Point(22, 307);
+            this.gumbDodajLiniju.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.gumbDodajLiniju.Name = "gumbDodajLiniju";
-            this.gumbDodajLiniju.Size = new System.Drawing.Size(110, 51);
+            this.gumbDodajLiniju.Size = new System.Drawing.Size(82, 41);
             this.gumbDodajLiniju.TabIndex = 27;
             this.gumbDodajLiniju.Text = "Dodaj";
             this.gumbDodajLiniju.UseVisualStyleBackColor = false;
@@ -95,20 +95,20 @@
             // dgvLinije
             // 
             this.dgvLinije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLinije.Location = new System.Drawing.Point(29, 123);
-            this.dgvLinije.Margin = new System.Windows.Forms.Padding(20);
+            this.dgvLinije.Location = new System.Drawing.Point(22, 100);
+            this.dgvLinije.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
             this.dgvLinije.Name = "dgvLinije";
             this.dgvLinije.RowHeadersWidth = 51;
             this.dgvLinije.RowTemplate.Height = 24;
-            this.dgvLinije.Size = new System.Drawing.Size(724, 220);
+            this.dgvLinije.Size = new System.Drawing.Size(543, 179);
             this.dgvLinije.TabIndex = 26;
             // 
             // txtPretrazivanjeLinije
             // 
-            this.txtPretrazivanjeLinije.Location = new System.Drawing.Point(557, 61);
-            this.txtPretrazivanjeLinije.Margin = new System.Windows.Forms.Padding(20);
+            this.txtPretrazivanjeLinije.Location = new System.Drawing.Point(418, 50);
+            this.txtPretrazivanjeLinije.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
             this.txtPretrazivanjeLinije.Name = "txtPretrazivanjeLinije";
-            this.txtPretrazivanjeLinije.Size = new System.Drawing.Size(196, 22);
+            this.txtPretrazivanjeLinije.Size = new System.Drawing.Size(148, 20);
             this.txtPretrazivanjeLinije.TabIndex = 25;
             this.txtPretrazivanjeLinije.TextChanged += new System.EventHandler(this.txtPretrazivanjeLinije_TextChanged);
             // 
@@ -116,10 +116,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(553, 29);
-            this.label2.Margin = new System.Windows.Forms.Padding(20);
+            this.label2.Location = new System.Drawing.Point(415, 24);
+            this.label2.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 20);
+            this.label2.Size = new System.Drawing.Size(95, 17);
             this.label2.TabIndex = 24;
             this.label2.Text = "Pretraživanje:";
             // 
@@ -129,29 +129,30 @@
             this.label1.BackColor = System.Drawing.Color.DarkBlue;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(29, 29);
-            this.label1.Margin = new System.Windows.Forms.Padding(20);
+            this.label1.Location = new System.Drawing.Point(22, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 54);
+            this.label1.Size = new System.Drawing.Size(202, 44);
             this.label1.TabIndex = 23;
             this.label1.Text = "Popis linija";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 87);
+            this.label3.Location = new System.Drawing.Point(20, 71);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(474, 16);
+            this.label3.Size = new System.Drawing.Size(415, 13);
             this.label3.TabIndex = 40;
-            this.label3.Text = "Zeleno označeni redovi predstavljaju linije koji se koriste za vozila. Ne brišu s" +
-    "e!";
+            this.label3.Text = "Zeleno označeni redovi predstavljaju linije koji se koriste kod voznog reda. Ne b" +
+    "rišu se!";
             // 
             // FormaZaLiniju
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
-            this.ClientSize = new System.Drawing.Size(782, 453);
+            this.ClientSize = new System.Drawing.Size(586, 368);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.gumbObrisiLiniju);
@@ -161,6 +162,7 @@
             this.Controls.Add(this.txtPretrazivanjeLinije);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormaZaLiniju";
             this.Text = "FormaZaLiniju";
             this.Load += new System.EventHandler(this.FormaZaLiniju_Load);

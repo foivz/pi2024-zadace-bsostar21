@@ -15,10 +15,11 @@ namespace BŠoštar___GLines.Models
         public string stanicaPolaska { get; set; }
         public string stanicaDolaska { get; set; }
         public string danUTjednu {  get; set; }
+        public int IdLinija { get; set; }
 
         public override string ToString()
         {
-            return stanicaPolaska;
+            return stanicaPolaska ;
         }
     }
 }

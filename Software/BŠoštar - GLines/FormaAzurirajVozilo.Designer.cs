@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             this.gumbAzurirajVozilo = new System.Windows.Forms.Button();
-            this.cmbLinija = new System.Windows.Forms.ComboBox();
             this.cmbVoziRed = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.txtSlobodnaMjesta = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtBrojSjedala = new System.Windows.Forms.TextBox();
@@ -52,7 +50,7 @@
             // 
             this.gumbAzurirajVozilo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.gumbAzurirajVozilo.ForeColor = System.Drawing.Color.Transparent;
-            this.gumbAzurirajVozilo.Location = new System.Drawing.Point(257, 474);
+            this.gumbAzurirajVozilo.Location = new System.Drawing.Point(256, 412);
             this.gumbAzurirajVozilo.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
             this.gumbAzurirajVozilo.Name = "gumbAzurirajVozilo";
             this.gumbAzurirajVozilo.Size = new System.Drawing.Size(82, 41);
@@ -61,20 +59,12 @@
             this.gumbAzurirajVozilo.UseVisualStyleBackColor = false;
             this.gumbAzurirajVozilo.Click += new System.EventHandler(this.gumbAzurirajVozilo_Click);
             // 
-            // cmbLinija
-            // 
-            this.cmbLinija.FormattingEnabled = true;
-            this.cmbLinija.Location = new System.Drawing.Point(21, 431);
-            this.cmbLinija.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cmbLinija.Name = "cmbLinija";
-            this.cmbLinija.Size = new System.Drawing.Size(169, 21);
-            this.cmbLinija.TabIndex = 40;
-            // 
             // cmbVoziRed
             // 
+            this.cmbVoziRed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbVoziRed.FormattingEnabled = true;
-            this.cmbVoziRed.Location = new System.Drawing.Point(21, 496);
-            this.cmbVoziRed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbVoziRed.Location = new System.Drawing.Point(21, 432);
+            this.cmbVoziRed.Margin = new System.Windows.Forms.Padding(2);
             this.cmbVoziRed.Name = "cmbVoziRed";
             this.cmbVoziRed.Size = new System.Drawing.Size(169, 21);
             this.cmbVoziRed.TabIndex = 39;
@@ -83,28 +73,17 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(18, 465);
+            this.label8.Location = new System.Drawing.Point(18, 401);
             this.label8.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 17);
             this.label8.TabIndex = 38;
             this.label8.Text = "Vozni red:";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(18, 400);
-            this.label7.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 17);
-            this.label7.TabIndex = 37;
-            this.label7.Text = "Linija:";
-            // 
             // txtSlobodnaMjesta
             // 
             this.txtSlobodnaMjesta.Location = new System.Drawing.Point(21, 367);
-            this.txtSlobodnaMjesta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSlobodnaMjesta.Margin = new System.Windows.Forms.Padding(2);
             this.txtSlobodnaMjesta.Name = "txtSlobodnaMjesta";
             this.txtSlobodnaMjesta.Size = new System.Drawing.Size(169, 20);
             this.txtSlobodnaMjesta.TabIndex = 36;
@@ -123,7 +102,7 @@
             // txtBrojSjedala
             // 
             this.txtBrojSjedala.Location = new System.Drawing.Point(21, 304);
-            this.txtBrojSjedala.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBrojSjedala.Margin = new System.Windows.Forms.Padding(2);
             this.txtBrojSjedala.Name = "txtBrojSjedala";
             this.txtBrojSjedala.Size = new System.Drawing.Size(169, 20);
             this.txtBrojSjedala.TabIndex = 34;
@@ -142,7 +121,7 @@
             // textNazivVozilo
             // 
             this.textNazivVozilo.Location = new System.Drawing.Point(21, 240);
-            this.textNazivVozilo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textNazivVozilo.Margin = new System.Windows.Forms.Padding(2);
             this.textNazivVozilo.Name = "textNazivVozilo";
             this.textNazivVozilo.Size = new System.Drawing.Size(169, 20);
             this.textNazivVozilo.TabIndex = 32;
@@ -161,7 +140,7 @@
             // textMarkaVozilo
             // 
             this.textMarkaVozilo.Location = new System.Drawing.Point(21, 177);
-            this.textMarkaVozilo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textMarkaVozilo.Margin = new System.Windows.Forms.Padding(2);
             this.textMarkaVozilo.Name = "textMarkaVozilo";
             this.textMarkaVozilo.Size = new System.Drawing.Size(169, 20);
             this.textMarkaVozilo.TabIndex = 30;
@@ -181,7 +160,7 @@
             // 
             this.gumbOdustani.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gumbOdustani.ForeColor = System.Drawing.Color.Transparent;
-            this.gumbOdustani.Location = new System.Drawing.Point(370, 474);
+            this.gumbOdustani.Location = new System.Drawing.Point(368, 412);
             this.gumbOdustani.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
             this.gumbOdustani.Name = "gumbOdustani";
             this.gumbOdustani.Size = new System.Drawing.Size(82, 41);
@@ -204,7 +183,7 @@
             // txtModelVozilo
             // 
             this.txtModelVozilo.Location = new System.Drawing.Point(21, 114);
-            this.txtModelVozilo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtModelVozilo.Margin = new System.Windows.Forms.Padding(2);
             this.txtModelVozilo.Name = "txtModelVozilo";
             this.txtModelVozilo.Size = new System.Drawing.Size(169, 20);
             this.txtModelVozilo.TabIndex = 26;
@@ -212,7 +191,7 @@
             // txtOznakaVozilo
             // 
             this.txtOznakaVozilo.Location = new System.Drawing.Point(21, 50);
-            this.txtOznakaVozilo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOznakaVozilo.Margin = new System.Windows.Forms.Padding(2);
             this.txtOznakaVozilo.Name = "txtOznakaVozilo";
             this.txtOznakaVozilo.Size = new System.Drawing.Size(169, 20);
             this.txtOznakaVozilo.TabIndex = 25;
@@ -233,12 +212,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(474, 539);
+            this.ClientSize = new System.Drawing.Size(474, 471);
             this.Controls.Add(this.gumbAzurirajVozilo);
-            this.Controls.Add(this.cmbLinija);
             this.Controls.Add(this.cmbVoziRed);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtSlobodnaMjesta);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtBrojSjedala);
@@ -252,7 +229,7 @@
             this.Controls.Add(this.txtModelVozilo);
             this.Controls.Add(this.txtOznakaVozilo);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormaAzurirajVozilo";
             this.Text = "FormaAzurirajVozilo";
             this.Load += new System.EventHandler(this.FormaAzurirajVozilo_Load);
@@ -264,10 +241,8 @@
         #endregion
 
         private System.Windows.Forms.Button gumbAzurirajVozilo;
-        private System.Windows.Forms.ComboBox cmbLinija;
         private System.Windows.Forms.ComboBox cmbVoziRed;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtSlobodnaMjesta;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtBrojSjedala;

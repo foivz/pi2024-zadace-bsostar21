@@ -47,6 +47,8 @@ namespace BŠoštar___GLines
 
             dgvLinije.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
+            dgvLinije.Columns["StanicaLinije"].Visible = false;
+
             dgvLinije.Columns["IdLinija"].DisplayIndex = 0;
             dgvLinije.Columns["nazivLinije"].DisplayIndex = 1;
             dgvLinije.Columns["polazisnaStanica"].DisplayIndex = 2;
@@ -59,13 +61,13 @@ namespace BŠoštar___GLines
             dgvLinije.Columns["odredisnaStanica"].HeaderText = "Stanica odredišta";
             dgvLinije.Columns["vrijemePutovanja"].HeaderText = "Vrijeme putovanja u minutama";
 
-            
+
             foreach (DataGridViewRow row in dgvLinije.Rows)
             {
                 Linija linija = row.DataBoundItem as Linija;
                 if (linija != null && LinijaRepozitorij.IsLinijaInUse(linija.idLinija))
                 {
-                    row.DefaultCellStyle.BackColor = Color.LimeGreen; 
+                    row.DefaultCellStyle.BackColor = Color.LimeGreen;
                 }
             }
         }
@@ -138,6 +140,8 @@ namespace BŠoštar___GLines
                 dgvLinije.DataSource = null;
 
             }
+
+            
         }
     }
 }

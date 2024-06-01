@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BŠoštar___GLines.Repozitoriji
 {
@@ -75,6 +76,8 @@ namespace BŠoštar___GLines.Repozitoriji
             string polazakstanica = reader["stanicaPolaska"].ToString() ;
             string dolazakstanica = reader["stanicaDolaska"].ToString();
             string dan = reader["danUTjednu"].ToString();
+            int linija = int.Parse(reader["IdLinija"].ToString());
+
 
             var vozni = new VozniRed
             {
@@ -84,6 +87,7 @@ namespace BŠoštar___GLines.Repozitoriji
                 stanicaPolaska = polazakstanica,
                 stanicaDolaska = dolazakstanica,
                 danUTjednu = dan,
+                IdLinija = linija,
             };
 
             return vozni;
@@ -95,7 +99,7 @@ namespace BŠoštar___GLines.Repozitoriji
             string vrijemeD = redovi.vrijemeDolaska.ToString("HH:mm");
 
             string sqlInsert = "";
-            sqlInsert = "INSERT INTO VozniRed (vrijemePolaska, vrijemeDolaska, stanicaPolaska, stanicaDolaska, danUTjednu) VALUES ('" + vrijemeP + "', '" + vrijemeD + "', '" + redovi.stanicaPolaska + "', '" + redovi.stanicaDolaska + "', '" + redovi.danUTjednu + "')";
+            sqlInsert = "INSERT INTO VozniRed (vrijemePolaska, vrijemeDolaska, stanicaPolaska, stanicaDolaska, danUTjednu, IdLinija) VALUES ('" + vrijemeP + "', '" + vrijemeD + "', '" + redovi.stanicaPolaska + "', '" + redovi.stanicaDolaska + "', '" + redovi.danUTjednu + "', '" + redovi.IdLinija + "')";
 
             DB.OpenConnection();
             int rowsAffected = DB.ExecuteCommand(sqlInsert);
@@ -107,6 +111,12 @@ namespace BŠoštar___GLines.Repozitoriji
 
         public static int Delete(VozniRed redovi)
         {
+            if (IsVozniRedInUse(redovi.IdVOzniRed))
+            {
+                MessageBox.Show("Vozni red se koristi.", "Upozorenje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return -1;
+            }
+            else {
             string sqlDelete = "DELETE FROM VozniRed WHERE IdVozniRed = " + redovi.IdVOzniRed;
 
             DB.OpenConnection();
@@ -114,7 +124,7 @@ namespace BŠoštar___GLines.Repozitoriji
             DB.CloseConnection();
 
             return rowsAffected;
-
+            }
         }
 
         public static int Update(VozniRed redovi)
@@ -128,8 +138,10 @@ namespace BŠoštar___GLines.Repozitoriji
                 + vrijemeP + "', vrijemeDolaska = '"
                 + vrijemeD + "', stanicaPolaska = '"
                 + redovi.stanicaPolaska + "', stanicaDolaska = '"
-                + redovi.stanicaDolaska + "', danUTjednu = '" + redovi.danUTjednu
-                + "' WHERE IdVozniRed = " + redovi.IdVOzniRed;
+                + redovi.stanicaDolaska + "', danUTjednu = '" 
+                + redovi.danUTjednu + "', IdLinija = '" +
+                + redovi.IdLinija +
+                "' WHERE IdVozniRed = " + redovi.IdVOzniRed;
             DB.OpenConnection();
             int rowsAffected = DB.ExecuteCommand(sqlUpdate);
             DB.CloseConnection();
@@ -157,5 +169,23 @@ namespace BŠoštar___GLines.Repozitoriji
 
             return isInUse;
         }
+
+        public static string GetPolazisnaStanica(int vozniRedId)
+        {
+            string nazivStanice = null;
+
+            string sql = $"SELECT stanicaPolaska FROM VozniRed WHERE IdVozniRed = {vozniRedId}";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            if (reader.Read())
+            {
+                nazivStanice = reader["stanicaPolaska"].ToString();
+            }
+            reader.Close();
+            DB.CloseConnection();
+
+            return nazivStanice;
+        }
+
     }
 }

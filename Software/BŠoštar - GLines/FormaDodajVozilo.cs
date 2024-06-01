@@ -32,7 +32,6 @@ namespace BŠoštar___GLines
             string naziv = textNazivVozilo.Text;
             int sjedala = int.Parse(txtBrojSjedala.Text);
             int mjesta = int.Parse(txtSlobodnaMjesta.Text);
-            int linija = (int)cmbLinija.SelectedValue;
             int voznired = (int)cmbVoziRed.SelectedValue;
 
 
@@ -45,7 +44,6 @@ namespace BŠoštar___GLines
                 nazivVozila = naziv,
                 brojSjedala = sjedala,
                 brojSlobodnihMjesta = mjesta,
-                IdLinija = linija,
                 IdVozniRed = voznired,
 
             };
@@ -57,15 +55,16 @@ namespace BŠoštar___GLines
 
         private void FormaDodajVozilo_Load(object sender, EventArgs e)
         {
-            var linija = LinijaRepozitorij.GetLinije();
-            cmbLinija.DataSource = linija;
-            //cmbLinija.DisplayMember = "nazivLinije";
-            cmbLinija.ValueMember = "IdLinija";
 
             var voznired = VozniRedRepozitorij.GetVozneRedove();
             cmbVoziRed.DataSource = voznired;
             //cmbVoziRed.DisplayMember = "stanicaPolaska";
             cmbVoziRed.ValueMember = "IdVozniRed";
+        }
+
+        private void cmbLinija_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -14,7 +14,12 @@ namespace BŠoštar___GLines.Models
         public string odredisnaStanica { get; set; }
 
         public int vrijemePutovanja { get; set; }
+        public ICollection<StanicaLinija> StanicaLinije { get; set; }
 
+        public Linija()
+        {
+            StanicaLinije = new List<StanicaLinija>();
+        }
         public override string ToString()
         {
             return nazivLinije;

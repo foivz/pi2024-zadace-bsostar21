@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BŠoštar___GLines.Repozitoriji
 {
@@ -95,20 +96,34 @@ namespace BŠoštar___GLines.Repozitoriji
             int rowsAffected = DB.ExecuteCommand(sqlInsert);
             DB.CloseConnection();
 
+
             return rowsAffected;
 
         }
 
-        public static int Delete(Linija linije)
+        public static int Delete(Linija linija)
         {
-            string sqlDelete = "DELETE FROM Linija WHERE IdLinija = " + linije.idLinija;
-
+            
+            string sqlDeleteStanicaLinija = "DELETE FROM StanicaLinija WHERE IdLinija = " + linija.idLinija;
             DB.OpenConnection();
-            int rowsAffected = DB.ExecuteCommand(sqlDelete);
+            int rowsAffectedStanicaLinija = DB.ExecuteCommand(sqlDeleteStanicaLinija);
             DB.CloseConnection();
 
-            return rowsAffected;
+            if (IsLinijaInUse(linija.idLinija))
+            {
+                MessageBox.Show("Linija se koristi.", "Upozorenje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return -1;
+            }
+            else
+            {
+                string sqlDeleteLinija = "DELETE FROM Linija WHERE IdLinija = " + linija.idLinija;
+                DB.OpenConnection();
+                int rowsAffectedLinija = DB.ExecuteCommand(sqlDeleteLinija);
+                DB.CloseConnection();
 
+                return rowsAffectedLinija;
+            }
+            
         }
 
         public static int Update(Linija linije)
@@ -132,7 +147,7 @@ namespace BŠoštar___GLines.Repozitoriji
         {
             bool isInUse = false;
 
-            string sqlCheckReference = "SELECT COUNT(*) FROM Vozilo WHERE IdLinija = " + id;
+            string sqlCheckReference = "SELECT COUNT(*) FROM VozniRed WHERE IdLinija = " + id;
             DB.OpenConnection();
             var reader = DB.GetDataReader(sqlCheckReference);
 

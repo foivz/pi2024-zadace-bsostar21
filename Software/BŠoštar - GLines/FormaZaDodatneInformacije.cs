@@ -47,6 +47,7 @@ namespace BŠoštar___GLines
                     txtVozilo.Text = vozilo.oznakaVozila;
                     txtKasnjenje.Text = GenerirajKasnjenje().ToString();
                     txtStanica.Text = red.stanicaPolaska;
+                    txtSlobodnaMj.Text = vozilo.brojSlobodnihMjesta.ToString();
                     napomena.Text = "NAPOMENA: Nema napomene.";
 
                 }
@@ -70,6 +71,19 @@ namespace BŠoštar___GLines
             return kasnjenje;
         }
 
+        private void gumbKupi_Click(object sender, EventArgs e)
+        {
+            if (red != null)
+            {
+                Vozilo vozilo = VoziloRepozitorij.GetVoziloByVozniRedId(red.IdVOzniRed);
 
+                if (vozilo != null)
+                {
+                    vozilo.brojSlobodnihMjesta--;
+                    VoziloRepozitorij.Update(vozilo);
+                    txtSlobodnaMj.Text = vozilo.brojSlobodnihMjesta.ToString();
+                }
+            }
+        }
     }
 }

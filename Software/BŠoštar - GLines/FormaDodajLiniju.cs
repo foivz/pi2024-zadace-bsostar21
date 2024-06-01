@@ -27,7 +27,7 @@ namespace BŠoštar___GLines
         private void gumbDodajLiniju_Click(object sender, EventArgs e)
         {
             string naziv = txtNazivLinija.Text;
-            string polazisna =cbPolazisnaStanica.Text;
+            string polazisna = cbPolazisnaStanica.Text;
             string odredisna = cbOdredisnaStanica.Text;
             int vrijeme = int.Parse(txtVrijemePutovanja.Text);
 
@@ -37,14 +37,38 @@ namespace BŠoštar___GLines
                 polazisnaStanica = polazisna,
                 odredisnaStanica = odredisna,
                 vrijemePutovanja = vrijeme,
-
             };
 
+         
             LinijaRepozitorij.Save(linija);
+
+
+            Linija lin = LinijaRepozitorij.GetLinijaByName(naziv)?.FirstOrDefault();
+            int idNoveLinije = lin != null ? lin.idLinija : -1;
+
+            int idPolazisneStanice = StanicaRepozitorij.GetStanicaByName(polazisna)
+                .FirstOrDefault(stanica => stanica.nazivStanice == polazisna)?.idStanica ?? -1;
+
+            int idOdredisneStanice = StanicaRepozitorij.GetStanicaByName(odredisna)
+                .FirstOrDefault(stanica => stanica.nazivStanice == odredisna)?.idStanica ?? -1;
+
+            var stanicaLinijaPolazisna = new StanicaLinija
+            {
+                IdStanica = idPolazisneStanice,
+                IdLinija = idNoveLinije,
+            };
+            StanicaLinijaRepozitorij.Save(stanicaLinijaPolazisna);
+
+            var stanicaLinijaOdredisna = new StanicaLinija
+            {
+                IdStanica = idOdredisneStanice,
+                IdLinija = idNoveLinije,
+            };
+            StanicaLinijaRepozitorij.Save(stanicaLinijaOdredisna);
+
             this.Close();
-
-
         }
+
 
         private void FormaDodajLiniju_Load(object sender, EventArgs e)
         {

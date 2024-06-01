@@ -53,12 +53,15 @@ namespace BŠoštar___GLines
 
             dgvRed.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
+            dgvRed.Columns["IdLinija"].Visible = false;
+
             dgvRed.Columns["IdVozniRed"].DisplayIndex = 0;
             dgvRed.Columns["stanicaPolaska"].DisplayIndex = 1;
             dgvRed.Columns["vrijemePolaska"].DisplayIndex = 2;
             dgvRed.Columns["stanicaDolaska"].DisplayIndex = 3;
             dgvRed.Columns["vrijemeDolaska"].DisplayIndex = 4;
             dgvRed.Columns["danUTjednu"].DisplayIndex = 5;
+
 
             dgvRed.Columns["IdVozniRed"].HeaderText = "ID Voznog reda";
             dgvRed.Columns["stanicaPolaska"].HeaderText = "Stanica polaska";
@@ -75,7 +78,7 @@ namespace BŠoštar___GLines
                 VozniRed red = row.DataBoundItem as VozniRed;
                 if (red != null && VozniRedRepozitorij.IsVozniRedInUse(red.IdVOzniRed))
                 {
-                    row.DefaultCellStyle.BackColor = Color.LimeGreen; 
+                    row.DefaultCellStyle.BackColor = Color.LimeGreen;
                 }
             }
         }

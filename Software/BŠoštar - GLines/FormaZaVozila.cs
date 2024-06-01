@@ -62,8 +62,7 @@ namespace BŠoštar___GLines
             dgvVozilo.Columns["nazivVozila"].DisplayIndex = 4;
             dgvVozilo.Columns["brojSjedala"].DisplayIndex = 5;
             dgvVozilo.Columns["brojSlobodnihMjesta"].DisplayIndex = 6;
-            dgvVozilo.Columns["IdLinija"].DisplayIndex = 7;
-            dgvVozilo.Columns["IdVozniRed"].DisplayIndex = 8;
+            dgvVozilo.Columns["IdVozniRed"].DisplayIndex = 7;
 
 
 
@@ -74,10 +73,11 @@ namespace BŠoštar___GLines
             dgvVozilo.Columns["nazivVozila"].HeaderText = "Naziv";
             dgvVozilo.Columns["brojSjedala"].HeaderText = "Broj sjedala";
             dgvVozilo.Columns["brojSlobodnihMjesta"].HeaderText = "Slobodna mjesta";
-            dgvVozilo.Columns["IdLinija"].HeaderText = "Linija";
             dgvVozilo.Columns["IdVozniRed"].HeaderText = "Vozni Red";
 
         }
+
+
 
         private void gumbObrisiVozilo_Click(object sender, EventArgs e)
         {
@@ -109,8 +109,7 @@ namespace BŠoštar___GLines
                     dgvVozilo.Columns["nazivVozila"].DisplayIndex = 4;
                     dgvVozilo.Columns["brojSjedala"].DisplayIndex = 5;
                     dgvVozilo.Columns["brojSlobodnihMjesta"].DisplayIndex = 6;
-                    dgvVozilo.Columns["IdLinija"].DisplayIndex = 7;
-                    dgvVozilo.Columns["IdVozniRed"].DisplayIndex = 8;
+                    dgvVozilo.Columns["IdVozniRed"].DisplayIndex = 7;
 
 
 
@@ -121,7 +120,6 @@ namespace BŠoštar___GLines
                     dgvVozilo.Columns["nazivVozila"].HeaderText = "Naziv";
                     dgvVozilo.Columns["brojSjedala"].HeaderText = "Broj sjedala";
                     dgvVozilo.Columns["brojSlobodnihMjesta"].HeaderText = "Slobodna mjesta";
-                    dgvVozilo.Columns["IdLinija"].HeaderText = "Linija";
                     dgvVozilo.Columns["IdVozniRed"].HeaderText = "Vozni Red";
                 }
                 else
