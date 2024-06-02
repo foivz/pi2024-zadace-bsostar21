@@ -33,4 +33,4 @@ Zadaća 2: https://github.com/foivz/pi2024-zadace-bsostar21/wiki/Specifikacija-d
 
 Zadaća 3: https://github.com/foivz/pi2024-zadace-bsostar21/tree/master/Software/B%C5%A0o%C5%A1tar%20-%20GLines
 
-Za prijavljivanje zaposlenkia koristi se korisničko ime: zaposlenik i lozinka: glines123
+Za prijavljivanje zaposlenika koristi se korisničko ime: zaposlenik i lozinka: glines123
