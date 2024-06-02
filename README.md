@@ -30,3 +30,7 @@ https://github.com/foivz/pi2024-zadace-bsostar21/blob/master/Zadatak%20-%20Grads
 Zadaća 1: https://github.com/foivz/pi2024-zadace-bsostar21/wiki/Tehni%C4%8Dka-dokumentacija
 
 Zadaća 2: https://github.com/foivz/pi2024-zadace-bsostar21/wiki/Specifikacija-dizajna-programskog-proizvoda-GLines
+
+Zadaća 3: https://github.com/foivz/pi2024-zadace-bsostar21/tree/master/Software/B%C5%A0o%C5%A1tar%20-%20GLines
+
+Za prijavljivanje zaposlenkia koristi se korisničko ime: zaposlenik i lozinka: glines123
