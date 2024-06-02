@@ -82,6 +82,7 @@ namespace BŠoštar___GLines
                     vozilo.brojSlobodnihMjesta--;
                     VoziloRepozitorij.Update(vozilo);
                     txtSlobodnaMj.Text = vozilo.brojSlobodnihMjesta.ToString();
+                    MessageBox.Show("Uspješno kupljena krata.", "Odobreno", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

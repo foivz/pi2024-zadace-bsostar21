@@ -104,11 +104,6 @@ namespace BŠoštar___GLines.Repozitoriji
         public static int Delete(Linija linija)
         {
             
-            string sqlDeleteStanicaLinija = "DELETE FROM StanicaLinija WHERE IdLinija = " + linija.idLinija;
-            DB.OpenConnection();
-            int rowsAffectedStanicaLinija = DB.ExecuteCommand(sqlDeleteStanicaLinija);
-            DB.CloseConnection();
-
             if (IsLinijaInUse(linija.idLinija))
             {
                 MessageBox.Show("Linija se koristi.", "Upozorenje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -116,6 +111,11 @@ namespace BŠoštar___GLines.Repozitoriji
             }
             else
             {
+                string sqlDeleteStanicaLinija = "DELETE FROM StanicaLinija WHERE IdLinija = " + linija.idLinija;
+                DB.OpenConnection();
+                int rowsAffectedStanicaLinija = DB.ExecuteCommand(sqlDeleteStanicaLinija);
+                DB.CloseConnection();
+
                 string sqlDeleteLinija = "DELETE FROM Linija WHERE IdLinija = " + linija.idLinija;
                 DB.OpenConnection();
                 int rowsAffectedLinija = DB.ExecuteCommand(sqlDeleteLinija);
