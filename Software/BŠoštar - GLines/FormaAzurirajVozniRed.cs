@@ -35,6 +35,11 @@ namespace BŠoštar___GLines
             red.stanicaPolaska = cbStanicaPolaska.Text;
             red.stanicaDolaska = cbStanicaDolaska.Text;
             red.danUTjednu = cmbDani.SelectedItem?.ToString();
+            int linija;
+            if (int.TryParse(cmLinija.Text, out linija))
+            {
+                red.IdLinija = linija;
+            }
 
             VozniRedRepozitorij.Update(red);
             this.Close();
@@ -64,6 +69,14 @@ namespace BŠoštar___GLines
             cbStanicaDolaska.Text = red.stanicaDolaska;
 
             cmbDani.Text = red.danUTjednu;
+
+            var linija = LinijaRepozitorij.GetLinije();
+            cmLinija.DataSource = linija;
+            //cmbVoziRed.DisplayMember = "stanicaPolaska";
+            cmLinija.ValueMember = "IdLinija";
+
+
+            cmLinija.Text = red.IdLinija.ToString();
 
             
 
